@@ -43,7 +43,7 @@ export default function VerticalTabsFeature({
         borderRadius: "20px",
         overflow: "hidden",
         background: "#111",
-        maxWidth: "1200px",
+        maxWidth: "1400px",
         mx: "auto",
       }}
     >

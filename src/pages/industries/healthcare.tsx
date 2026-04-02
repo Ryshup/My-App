@@ -25,9 +25,7 @@ export default function HealthcarePage() {
 
       <HeroHeader
         title="Healthcare IT Services and Solutions"
-        subtitle="Powering the Future of Healthcare with Intelligent Technology"
         description1="From strategic consulting and custom development to continuous support and AI-driven innovation, AIRITHM helps healthcare organizations build secure, scalable, and intelligent digital systems."
-        description2="We go beyond traditional IT services—designing solutions that are reliable, testable, and built for real-world impact."
         stats={heroStats}
         ctaText="Consult Our Experts"
         onCtaClick={() => console.log("CTA clicked")}
@@ -46,12 +44,12 @@ export default function HealthcarePage() {
         sx={{
           width: "100%",
           bgcolor: "#f5f3f0",
-          px: { xs: 2, md: 6 },
+          px: { xs: 2, md: 1 },
           pt: { xs: 6, md: 8 },
           pb: { xs: 2, md: 3 },
         }}
       >
-        <Box sx={{ maxWidth: "1200px", mx: "auto", mb: 0 }}>
+        <Box sx={{ maxWidth: "1400px", mx: "auto", mb: 0 }}>
           <h2
             style={{
               fontSize: "42px",
@@ -69,7 +67,6 @@ export default function HealthcarePage() {
               fontSize: "16px",
               color: "#333",
               lineHeight: 1.7,
-              maxWidth: "900px",
               marginBottom: "12px",
               textAlign: "justify",
             }}
@@ -84,7 +81,6 @@ export default function HealthcarePage() {
               fontSize: "16px",
               color: "#333",
               lineHeight: 1.7,
-              maxWidth: "900px",
               textAlign: "justify",
             }}
           >
@@ -100,7 +96,7 @@ export default function HealthcarePage() {
         sx={{
           width: "100%",
           bgcolor: "#f5f3f0",
-          px: { xs: 2, md: 6 },
+          px: { xs: 2, md: 1 },
           pt: 2,
           pb: 6,
         }}
@@ -121,12 +117,12 @@ export default function HealthcarePage() {
         sx={{
           width: "100%",
           bgcolor: "#f5f3f0",
-          px: { xs: 2, md: 6 },
+          px: { xs: 2, md: 1 },
           pt: 6,
           pb: 2,
         }}
       >
-        <Box sx={{ maxWidth: "1200px", mx: "auto", mb: 2 }}>
+        <Box sx={{ maxWidth: "1400px", mx: "auto", mb: -4 }}>
           <h2
             style={{
               fontSize: "42px",
@@ -144,7 +140,6 @@ export default function HealthcarePage() {
               fontSize: "16px",
               color: "#333",
               lineHeight: 1.7,
-              maxWidth: "900px",
               textAlign: "justify",
             }}
           >
@@ -163,12 +158,12 @@ export default function HealthcarePage() {
         sx={{
           width: "100%",
           bgcolor: "#f5f3f0",
-          px: { xs: 2, md: 6 },
+          px: { xs: 2, md: 1 },
           pt: 6,
           pb: 2,
         }}
       >
-        <Box sx={{ maxWidth: "1200px", mx: "auto", mb: 2 }}>
+        <Box sx={{ maxWidth: "1400px", mx: "auto", mb: 2 }}>
           <h3
             style={{
               fontSize: "24px",

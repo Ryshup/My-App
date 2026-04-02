@@ -8,9 +8,7 @@ interface HeroStat {
 
 interface HeroHeaderProps {
   title: string;
-  subtitle: string;
   description1: string;
-  description2: string;
   stats: HeroStat[];
   ctaText?: string;
   onCtaClick?: () => void;
@@ -48,9 +46,7 @@ const AnimatedCounter = ({ target }: { target: number }) => {
 
 export default function HeroHeader({
   title,
-  subtitle,
   description1,
-  description2,
   stats,
   ctaText = "Consult Our Experts",
   onCtaClick,
@@ -60,95 +56,156 @@ export default function HeroHeader({
       sx={{
         width: "100%",
         bgcolor: "#f5f3f0",
-        py: { xs: 8, md: 12 },
-        px: { xs: 2, md: 6 },
+        py: { xs: 8, md: 8 },
+        px: { xs: 2, md: 1 },
       }}
     >
       <Box
         sx={{
           maxWidth: "1400px",
           mx: "auto",
-          display: "grid",
-          gridTemplateColumns: { xs: "1fr", lg: "1fr 1fr" },
-          gap: { xs: 4, lg: 8 },
-          alignItems: "center",
+          display: "flex",
+          flexDirection: "column",
+          gap: 8,
         }}
       >
-        {/* LEFT SIDE - CONTENT */}
-        <Box>
-          {/* TITLE */}
-          <Typography
-            sx={{
-              fontSize: { xs: "32px", md: "56px" },
-              fontWeight: 900,
-              color: "#000",
-              lineHeight: 1.2,
-              mb: 3,
-              fontFamily: '"DM Sans", sans-serif',
-            }}
-          >
-            {title}
-          </Typography>
+        {/* TOP DIVIDER LINE */}
+        <Box
+          sx={{
+            height: "1px",
+            width: "100%",
+            bgcolor: "#999",
+          }}
+        />
 
-          {/* SUBTITLE */}
-          <Typography
-            sx={{
-              fontSize: { xs: "16px", md: "20px" },
-              fontWeight: 600,
-              color: "#333",
-              mb: 4,
-              fontFamily: '"DM Sans", sans-serif',
-            }}
-          >
-            {subtitle}
-          </Typography>
+        {/* MAIN CONTENT GRID */}
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: { xs: "1fr", lg: "1fr 1px 1fr" },
+            gap: { xs: 6, lg: 0 },
+            alignItems: "start",
+            position: "relative",
+            minHeight: "300px",
+          }}
+        >
+          {/* LEFT SIDE - TITLE & DESCRIPTION */}
+          <Box sx={{ pr: { lg: 6 } }}>
+            {/* TITLE */}
+            <Typography
+              sx={{
+                fontSize: { xs: "36px", md: "56px" },
+                fontWeight: 900,
+                color: "#000",
+                lineHeight: 1.2,
+                mb: 6,
+                fontFamily: '"DM Sans", sans-serif',
+              }}
+            >
+              {title}
+            </Typography>
 
-          {/* DIVIDER LINE */}
+            {/* DESCRIPTION */}
+            <Typography
+              sx={{
+                fontSize: { xs: "14px", md: "16px" },
+                color: "#555",
+                lineHeight: 1.8,
+                fontFamily: '"DM Sans", sans-serif',
+                textAlign: "justify",
+              }}
+            >
+              {description1}
+            </Typography>
+          </Box>
+
+          {/* CENTER - VERTICAL DIVIDER */}
           <Box
             sx={{
-              height: "2px",
-              width: "80px",
-              bgcolor: "#ccc",
-              mb: 4,
+              width: "1px",
+              height: "100%",
+              minHeight: "300px",
+              bgcolor: "#999",
+              display: { xs: "none", lg: "block" },
             }}
           />
 
-          {/* DESCRIPTION 1 */}
-          <Typography
+          {/* RIGHT SIDE - STATS GRID */}
+          <Box
             sx={{
-              fontSize: { xs: "14px", md: "16px" },
-              color: "#555",
-              lineHeight: 1.7,
-              mb: 3,
-              maxWidth: "600px",
-              fontFamily: '"DM Sans", sans-serif',
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: { xs: 4, md: 6 },
+              pl: { lg: 6 },
             }}
           >
-            {description1}
-          </Typography>
+            {stats.map((stat, index) => (
+              <Box
+                key={index}
+                sx={{
+                  pb: 3,
+                  borderBottom: "1px solid #999",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                }}
+              >
+                {/* STAT NUMBER */}
+                <Typography
+                  sx={{
+                    fontSize: { xs: "28px", md: "44px" },
+                    fontWeight: 900,
+                    color: "#000",
+                    mb: 1,
+                    fontFamily: '"DM Sans", sans-serif',
+                    lineHeight: 1.1,
+                  }}
+                >
+                  <AnimatedCounter target={stat.number} />
+                </Typography>
 
-          {/* DESCRIPTION 2 */}
-          <Typography
-            sx={{
-              fontSize: { xs: "14px", md: "16px" },
-              color: "#555",
-              lineHeight: 1.7,
-              mb: 6,
-              maxWidth: "600px",
-              fontFamily: '"DM Sans", sans-serif',
-            }}
-          >
-            {description2}
-          </Typography>
+                {/* STAT LABEL */}
+                <Typography
+                  sx={{
+                    fontSize: { xs: "12px", md: "14px" },
+                    color: "#666",
+                    fontWeight: 600,
+                    lineHeight: 1.5,
+                    fontFamily: '"DM Sans", sans-serif',
+                    textAlign: "justify",
+                  }}
+                >
+                  {stat.label}
+                </Typography>
+              </Box>
+            ))}
+          </Box>
+        </Box>
 
-          {/* CTA BUTTON */}
+        {/* BOTTOM DIVIDER LINE */}
+        <Box
+          sx={{
+            height: "1px",
+            width: "100%",
+            bgcolor: "#999",
+          }}
+        />
+
+        {/* CENTERED BUTTON AT BOTTOM */}
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            pb: 1,
+          }}
+        >
           <Button
             onClick={onCtaClick}
             sx={{
               bgcolor: "#0052CC",
               color: "#fff",
-              px: 4,
-              py: 1.5,
+              px: 5,
+              py: 2,
               borderRadius: "8px",
               fontSize: "16px",
               fontWeight: 600,
@@ -164,51 +221,6 @@ export default function HeroHeader({
           >
             {ctaText}
           </Button>
-        </Box>
-
-        {/* RIGHT SIDE - STATS */}
-        <Box
-          sx={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: { xs: 3, md: 4 },
-          }}
-        >
-          {stats.map((stat, index) => (
-            <Box
-              key={index}
-              sx={{
-                pb: 3,
-                borderBottom: "2px solid #e0e0e0",
-              }}
-            >
-              {/* STAT NUMBER */}
-              <Typography
-                sx={{
-                  fontSize: { xs: "32px", md: "42px" },
-                  fontWeight: 900,
-                  color: "#000",
-                  mb: 1,
-                  fontFamily: '"DM Sans", sans-serif',
-                }}
-              >
-                <AnimatedCounter target={stat.number} />
-              </Typography>
-
-              {/* STAT LABEL */}
-              <Typography
-                sx={{
-                  fontSize: { xs: "12px", md: "14px" },
-                  color: "#666",
-                  fontWeight: 600,
-                  lineHeight: 1.4,
-                  fontFamily: '"DM Sans", sans-serif',
-                }}
-              >
-                {stat.label}
-              </Typography>
-            </Box>
-          ))}
         </Box>
       </Box>
     </Box>

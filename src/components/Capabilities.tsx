@@ -97,7 +97,7 @@ export default function Capabilities() {
                 <Typography
                   sx={{
                     fontSize: 15,
-                    textAlign: "center",
+                    textAlign: "justify",
                     color: isActive ? "#fff" : "#fff",
                     lineHeight: 1.6,
                     transition: "none",

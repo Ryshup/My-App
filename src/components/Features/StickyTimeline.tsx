@@ -44,7 +44,7 @@ export default function StickyTimeline({
       {/* ✅ FIXED CONTAINER */}
       <Box
         sx={{
-          maxWidth: "1200px",
+          maxWidth: "1400px",
           mx: "auto",
           display: "flex",
           gap: 8,
@@ -81,7 +81,7 @@ export default function StickyTimeline({
                 fontFamily: '"DM Sans", sans-serif',
               }}
             >
-              [Our Core Capabilities] 
+              [Our Core Capabilities]
             </Typography>
           </Box>
         </Box>
@@ -117,7 +117,7 @@ export default function StickyTimeline({
                     height: 56,
                     minWidth: 56,
                     borderRadius: "50%",
-                    bgcolor: "#1a1a1a",
+                    bgcolor: "#015190",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",

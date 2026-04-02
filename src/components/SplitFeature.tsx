@@ -37,7 +37,7 @@ export default function SplitFeature({ features }: SplitFeatureProps) {
     <Box
       sx={{
         display: "flex",
-        maxWidth: "1200px",
+        maxWidth: "1400px",
         mx: "auto",
         borderRadius: "20px",
         overflow: "hidden",

@@ -128,7 +128,7 @@ export default function StickyTimeline() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    border: "2px solid rgba(255,255,255,0.1)",
+                    border: "2px solid rgba(1, 81, 144)",
                     color: "##ffffff",
                     position: "relative",
                     zIndex: 2,
