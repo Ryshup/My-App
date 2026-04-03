@@ -24,7 +24,7 @@ export default function HealthcarePage() {
       <Header />
 
       <HeroHeader
-        title="Healthcare IT Services and Solutions"
+        title="Our Offerings in Healthcare"
         description1="From strategic consulting and custom development to continuous support and AI-driven innovation, AIRITHM helps healthcare organizations build secure, scalable, and intelligent digital systems."
         stats={heroStats}
         ctaText="Consult Our Experts"
@@ -35,7 +35,7 @@ export default function HealthcarePage() {
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
         <StickyTimeline
           data={healthcareServices}
-          title="Meeting All Your Healthcare IT Needs with Technical Excellence – Our Services "
+          title="Our Healthcare Expertise"
         />
       </Box>
 
@@ -59,7 +59,7 @@ export default function HealthcarePage() {
               textAlign: "justify",
             }}
           >
-            Innovative Healthcare IT Solutions We Build
+            Our Healthcare Solutions to Scale
           </h2>
 
           <p
@@ -108,7 +108,7 @@ export default function HealthcarePage() {
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
         <StickyTimeline
           data={healthcareTimeline}
-          title="AI influence in this segment"
+          title="Our AI Capabilities"
         />
       </Box>
 
@@ -132,7 +132,7 @@ export default function HealthcarePage() {
               textAlign: "justify",
             }}
           >
-            Why Partner with AIRITHM for Your Healthcare IT Needs
+            Partner with AIRITHM for Your Healthcare Needs
           </h2>
 
           <p
