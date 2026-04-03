@@ -19,6 +19,7 @@ import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import type { SvgIconComponent } from "@mui/icons-material";
 
 import { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import MegaMenu from "./MegaMenu";
 
 /* ================= TYPES ================= */
@@ -162,6 +163,7 @@ const menuData: Record<MenuKey, MenuData> = {
 export default function Header() {
   const [openMenu, setOpenMenu] = useState<MenuKey | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const navigate = useNavigate();
 
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -316,8 +318,30 @@ export default function Header() {
 
                         {section.items.map((i, idx) => {
                           const itemLabel = typeof i === "string" ? i : i.label;
+                          const itemRoute = typeof i === "string" ? null : i.route;
+
                           return (
-                            <Typography key={idx} sx={{ ml: 1 }}>
+                            <Typography
+                              key={idx}
+                              sx={{
+                                ml: 1,
+                                cursor: itemRoute ? "pointer" : "default",
+                                color: itemRoute ? "#0052CC" : "#000",
+                                textDecoration: itemRoute ? "none" : "none",
+                                "&:hover": itemRoute
+                                  ? {
+                                      textDecoration: "underline",
+                                      color: "#003d99",
+                                    }
+                                  : {},
+                              }}
+                              onClick={() => {
+                                if (itemRoute) {
+                                  navigate(itemRoute);
+                                  setMobileOpen(false);
+                                }
+                              }}
+                            >
                               {itemLabel}
                             </Typography>
                           );
