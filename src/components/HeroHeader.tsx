@@ -94,7 +94,7 @@ export default function HeroHeader({
             {/* TITLE */}
             <Typography
               sx={{
-                fontSize: { xs: "36px", md: "56px" },
+                fontSize: "clamp(28px, 6vw, 56px)",
                 fontWeight: 900,
                 color: "#000",
                 lineHeight: 1.2,
@@ -108,7 +108,7 @@ export default function HeroHeader({
             {/* DESCRIPTION */}
             <Typography
               sx={{
-                fontSize: { xs: "14px", md: "16px" },
+                fontSize: "clamp(14px, 2vw, 16px)",
                 color: "#555",
                 lineHeight: 1.8,
                 fontFamily: '"DM Sans", sans-serif',
@@ -153,7 +153,7 @@ export default function HeroHeader({
                 {/* STAT NUMBER */}
                 <Typography
                   sx={{
-                    fontSize: { xs: "28px", md: "44px" },
+                    fontSize: "clamp(24px, 4vw, 44px)",
                     fontWeight: 900,
                     color: "#000",
                     mb: 1,
@@ -167,7 +167,7 @@ export default function HeroHeader({
                 {/* STAT LABEL */}
                 <Typography
                   sx={{
-                    fontSize: { xs: "12px", md: "14px" },
+                    fontSize: "clamp(12px, 1.5vw, 14px)",
                     color: "#666",
                     fontWeight: 600,
                     lineHeight: 1.5,

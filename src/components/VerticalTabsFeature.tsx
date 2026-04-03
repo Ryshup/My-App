@@ -39,21 +39,22 @@ export default function VerticalTabsFeature({
     <Box
       sx={{
         display: "flex",
-        height: "520px",
+        height: { xs: "auto", md: "520px" },
         borderRadius: "20px",
         overflow: "hidden",
         background: "#111",
         maxWidth: "1400px",
         mx: "auto",
+        flexDirection: { xs: "column", md: "row" },
       }}
     >
       {/* LEFT PANEL */}
       <Box
         sx={{
-          width: "35%",
+          width: { xs: "100%", md: "35%" },
           position: "relative",
-          px: 4,
-          py: 4,
+          px: { xs: 3, md: 4 },
+          py: { xs: 4, md: 4 },
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -105,7 +106,7 @@ export default function VerticalTabsFeature({
             >
               <Typography
                 sx={{
-                  fontSize: "16px",
+                  fontSize: "clamp(14px, 2vw, 18px)",
                   color: "#fff",
                   fontWeight: 400,
                 }}
@@ -120,11 +121,12 @@ export default function VerticalTabsFeature({
       {/* RIGHT PANEL */}
       <Box
         sx={{
-          width: "65%",
+          width: { xs: "100%", md: "65%" },
           position: "relative",
           display: "flex",
           alignItems: "center",
-          px: 6,
+          px: { xs: 3, md: 6 },
+          py: { xs: 4, md: 0 },
           overflow: "hidden",
         }}
       >
@@ -163,7 +165,7 @@ export default function VerticalTabsFeature({
               {/* NUMBER */}
               <Typography
                 sx={{
-                  fontSize: "64px",
+                  fontSize: "clamp(48px, 8vw, 64px)",
                   fontWeight: 700,
                   color: "#2563eb",
                   mb: 2,
@@ -175,7 +177,7 @@ export default function VerticalTabsFeature({
               {/* TITLE */}
               <Typography
                 sx={{
-                  fontSize: "20px",
+                  fontSize: "clamp(18px, 3vw, 24px)",
                   fontWeight: 500,
                   color: "#fff",
                   mb: 2,
@@ -188,7 +190,7 @@ export default function VerticalTabsFeature({
               <Typography
                 sx={{
                   color: "#bbb",
-                  fontSize: "15px",
+                  fontSize: "clamp(14px, 2vw, 16px)",
                   lineHeight: 1.7,
                   maxWidth: "520px",
                 }}

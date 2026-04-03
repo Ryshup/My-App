@@ -45,14 +45,14 @@ export default function HealthcarePage() {
           width: "100%",
           bgcolor: "#f5f3f0",
           px: { xs: 2, md: 1 },
-          pt: { xs: 6, md: 8 },
+          pt: { xs: 4, md: 8 },
           pb: { xs: 2, md: 3 },
         }}
       >
         <Box sx={{ maxWidth: "1400px", mx: "auto", mb: 0 }}>
           <h2
             style={{
-              fontSize: "42px",
+              fontSize: "clamp(28px, 5vw, 48px)",
               fontWeight: 700,
               color: "#000",
               marginBottom: "16px",
@@ -64,7 +64,7 @@ export default function HealthcarePage() {
 
           <p
             style={{
-              fontSize: "16px",
+              fontSize: "clamp(14px, 2vw, 16px)",
               color: "#333",
               lineHeight: 1.7,
               marginBottom: "12px",
@@ -78,7 +78,7 @@ export default function HealthcarePage() {
 
           <p
             style={{
-              fontSize: "16px",
+              fontSize: "clamp(14px, 2vw, 16px)",
               color: "#333",
               lineHeight: 1.7,
               textAlign: "justify",
@@ -118,14 +118,14 @@ export default function HealthcarePage() {
           width: "100%",
           bgcolor: "#f5f3f0",
           px: { xs: 2, md: 1 },
-          pt: 6,
+          pt: { xs: 4, md: 6 },
           pb: 2,
         }}
       >
         <Box sx={{ maxWidth: "1400px", mx: "auto", mb: -4 }}>
           <h2
             style={{
-              fontSize: "42px",
+              fontSize: "clamp(28px, 5vw, 48px)",
               fontWeight: 700,
               color: "#000",
               marginBottom: "16px",
@@ -137,7 +137,7 @@ export default function HealthcarePage() {
 
           <p
             style={{
-              fontSize: "16px",
+              fontSize: "clamp(14px, 2vw, 16px)",
               color: "#333",
               lineHeight: 1.7,
               textAlign: "justify",

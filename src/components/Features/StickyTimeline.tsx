@@ -40,29 +40,36 @@ export default function StickyTimeline({
   title = "Our Journey",
 }: StickyTimelineProps) {
   return (
-    <Box sx={{ bgcolor: "#000", color: "#fff", py: 12, px: { xs: 2, md: 6 } }}>
+    <Box
+      sx={{
+        bgcolor: "#000",
+        color: "#fff",
+        py: { xs: 6, md: 12 },
+        px: { xs: 2, md: 6 },
+      }}
+    >
       {/* ✅ FIXED CONTAINER */}
       <Box
         sx={{
           maxWidth: "1400px",
           mx: "auto",
           display: "flex",
-          gap: 8,
+          gap: { xs: 4, md: 8 },
           alignItems: "stretch",
           flexDirection: { xs: "column", md: "row" },
         }}
       >
         {/* LEFT (STICKY) */}
-        <Box sx={{ width: { md: "40%" }, flexShrink: 0 }}>
+        <Box sx={{ width: { xs: "100%", md: "40%" }, flexShrink: 0 }}>
           <Box
             sx={{
-              position: "sticky",
-              top: "120px",
+              position: { xs: "relative", md: "sticky" },
+              top: { xs: 0, md: "120px" },
             }}
           >
             <Typography
               sx={{
-                fontSize: { xs: 28, md: 42 },
+                fontSize: "clamp(28px, 5vw, 48px)",
                 fontWeight: 700,
                 lineHeight: 1.3,
                 mb: 4,
@@ -76,9 +83,10 @@ export default function StickyTimeline({
             <Typography
               sx={{
                 color: "#999",
-                fontSize: { xs: 14, md: 16 },
+                fontSize: "clamp(14px, 2vw, 16px)",
                 lineHeight: 1.8,
                 fontFamily: '"DM Sans", sans-serif',
+                display: { xs: "none", md: "block" },
               }}
             >
               [Our Core Capabilities]
@@ -87,7 +95,7 @@ export default function StickyTimeline({
         </Box>
 
         {/* RIGHT (SCROLL CONTENT) */}
-        <Box sx={{ width: { md: "60%" }, position: "relative" }}>
+        <Box sx={{ width: { xs: "100%", md: "60%" }, position: "relative" }}>
           {/* VERTICAL LINE */}
           <Box
             sx={{
@@ -98,24 +106,31 @@ export default function StickyTimeline({
               width: "2px",
               bgcolor: "rgba(255,255,255,0.1)",
               textAlign: "justify",
+              display: { xs: "none", md: "block" },
             }}
           />
 
-          <Box sx={{ display: "flex", flexDirection: "column", gap: 10 }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: { xs: 6, md: 10 },
+            }}
+          >
             {data.map((item, i) => (
               <Box
                 key={i}
                 sx={{
                   display: "flex",
-                  gap: 4,
+                  gap: { xs: 2, md: 4 },
                 }}
               >
                 {/* ICON */}
                 <Box
                   sx={{
-                    width: 56,
-                    height: 56,
-                    minWidth: 56,
+                    width: { xs: 48, md: 56 },
+                    height: { xs: 48, md: 56 },
+                    minWidth: { xs: 48, md: 56 },
                     borderRadius: "50%",
                     bgcolor: "#015190",
                     display: "flex",
@@ -138,7 +153,7 @@ export default function StickyTimeline({
                 <Box>
                   <Typography
                     sx={{
-                      fontSize: { xs: 16, md: 18 },
+                      fontSize: "clamp(16px, 2.5vw, 20px)",
                       fontWeight: 600,
                       mb: 2,
                       color: "#fff",
@@ -150,7 +165,7 @@ export default function StickyTimeline({
 
                   <Typography
                     sx={{
-                      fontSize: { xs: 13, md: 15 },
+                      fontSize: "clamp(14px, 2vw, 16px)",
                       lineHeight: 1.7,
                       color: "#999",
                       maxWidth: "600px",

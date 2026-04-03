@@ -42,18 +42,19 @@ export default function SplitFeature({ features }: SplitFeatureProps) {
         borderRadius: "20px",
         overflow: "hidden",
         bgcolor: "#111",
-        height: "400px", // ✅ FIXED HEIGHT
+        height: { xs: "auto", md: "400px" },
+        flexDirection: { xs: "column", md: "row" },
       }}
     >
       {/* LEFT PANEL */}
       <Box
         sx={{
-          width: "45%",
-          height: "100%", // ✅ IMPORTANT
+          width: { xs: "100%", md: "45%" },
+          height: { xs: "auto", md: "100%" },
           bgcolor: "#015190",
           color: "#fff",
-          px: 5,
-          py: 5,
+          px: { xs: 3, md: 5 },
+          py: { xs: 4, md: 5 },
           overflowY: "auto",
 
           /* ✅ WHITE SCROLLBAR */
@@ -97,7 +98,7 @@ export default function SplitFeature({ features }: SplitFeatureProps) {
                 {/* NUMBER */}
                 <Typography
                   sx={{
-                    fontSize: "19px",
+                    fontSize: "clamp(16px, 2vw, 18px)",
                     fontWeight: 400,
                     opacity: 0.8,
                     minWidth: "28px",
@@ -109,7 +110,7 @@ export default function SplitFeature({ features }: SplitFeatureProps) {
                 {/* TITLE */}
                 <Typography
                   sx={{
-                    fontSize: "20px",
+                    fontSize: "clamp(14px, 2vw, 18px)",
                     fontWeight: 400, // ✅ NO BOLD
                     lineHeight: 1.4,
                     color: isActive ? "#fff" : "rgba(255,255,255,0.7)",
@@ -127,12 +128,12 @@ export default function SplitFeature({ features }: SplitFeatureProps) {
       {/* RIGHT PANEL */}
       <Box
         sx={{
-          width: "55%",
+          width: { xs: "100%", md: "55%" },
           bgcolor: "#1a1a1a",
           display: "flex",
           alignItems: "center",
-          px: 6,
-          py: 5,
+          px: { xs: 3, md: 6 },
+          py: { xs: 4, md: 5 },
         }}
       >
         <AnimatePresence mode="wait">
@@ -167,7 +168,7 @@ export default function SplitFeature({ features }: SplitFeatureProps) {
                 {/* TITLE */}
                 <Typography
                   sx={{
-                    fontSize: 20,
+                    fontSize: "clamp(18px, 3vw, 24px)",
                     fontWeight: 500,
                     mb: 2,
                     color: "#fff",
@@ -180,7 +181,7 @@ export default function SplitFeature({ features }: SplitFeatureProps) {
                 {/* DESCRIPTION */}
                 <Typography
                   sx={{
-                    fontSize: 15,
+                    fontSize: "clamp(14px, 2vw, 16px)",
                     color: "#aaa",
                     lineHeight: 1.6,
                     maxWidth: "480px",
