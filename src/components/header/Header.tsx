@@ -318,7 +318,8 @@ export default function Header() {
 
                         {section.items.map((i, idx) => {
                           const itemLabel = typeof i === "string" ? i : i.label;
-                          const itemRoute = typeof i === "string" ? null : i.route;
+                          const itemRoute =
+                            typeof i === "string" ? null : i.route;
 
                           return (
                             <Typography
