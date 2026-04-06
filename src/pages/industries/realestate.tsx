@@ -5,17 +5,17 @@ import SplitFeature from "../../components/SplitFeature";
 import VerticalTabsFeature from "../../components/VerticalTabsFeature";
 import { Box } from "@mui/material";
 import {
-  fintechTimeline,
-  fintechSplitFeatures,
-  fintechVerticalTabs,
-} from "../../data/pages/fintechData";
+  realEstateTimeline,
+  realEstateSplitFeatures,
+  realEstateVerticalTabs,
+} from "../../data/pages/realEstateData";
 
-export default function FintechPage() {
+export default function RealEstatePage() {
   const heroStats = [
-    { number: 8, label: "Years of FinTech Experience" },
-    { number: 1200, label: "Financial Solutions Delivered" },
-    { number: 250, label: "Finance Experts" },
-    { number: 95, label: "Projects Delivered On Time" },
+    { number: 7, label: "Years of PropTech Experience" },
+    { number: 950, label: "Real Estate Solutions Delivered" },
+    { number: 210, label: "Real Estate Experts" },
+    { number: 94, label: "Projects Delivered On Time" },
   ];
 
   return (
@@ -23,8 +23,8 @@ export default function FintechPage() {
       <Header />
 
       <HeroHeader
-        title="Our Offerings in FinTech"
-        description1="From innovative payment systems and blockchain solutions to AI-driven trading platforms, AIRITHM empowers financial institutions with cutting-edge technology that drives growth and ensures regulatory compliance."
+        title="Our Offerings in Real Estate"
+        description1="From intelligent property management platforms and virtual property tours to AI-powered market analytics, AIRITHM transforms the real estate industry with technology that streamlines transactions, enhances tenant experiences, and maximizes property value."
         stats={heroStats}
         ctaText="Consult Our Experts"
         onCtaClick={() => console.log("CTA clicked")}
@@ -32,7 +32,10 @@ export default function FintechPage() {
 
       {/* 🔹 Services Section - Black Background */}
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
-        <StickyTimeline data={fintechTimeline} title="Our FinTech Expertise" />
+        <StickyTimeline
+          data={realEstateTimeline}
+          title="Our Real Estate Technology Expertise"
+        />
       </Box>
 
       {/* 🔹 Solutions Intro - White Background */}
@@ -55,7 +58,7 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Our FinTech Solutions to Scale
+            Our Real Estate Solutions to Scale
           </h2>
 
           <p
@@ -67,9 +70,10 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            From secure payment gateways and digital wallets to blockchain-based
-            settlement systems, AIRITHM delivers end-to-end financial technology
-            solutions tailored to evolving market needs.
+            From comprehensive property management systems and immersive virtual
+            reality tours to blockchain-based smart contracts, AIRITHM delivers
+            transformative real estate technology solutions that streamline
+            operations and enhance buyer and tenant experiences.
           </p>
 
           <p
@@ -80,9 +84,10 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Our focus is on building scalable, compliant, and high-security
-            systems that reduce transaction costs, improve customer experience,
-            and enable faster innovation in financial services.
+            Our focus is on building scalable platforms that reduce transaction
+            costs, improve property valuation accuracy through data analytics,
+            and create seamless digital experiences that connect buyers,
+            sellers, agents, and property managers.
           </p>
         </Box>
       </Box>
@@ -97,14 +102,14 @@ export default function FintechPage() {
           pb: 6,
         }}
       >
-        <SplitFeature features={fintechSplitFeatures} />
+        <SplitFeature features={realEstateSplitFeatures} />
       </Box>
 
       {/* 🔹 AI Timeline Section - Black Background */}
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
         <StickyTimeline
-          data={fintechTimeline}
-          title="FinTech Evolution & Innovation"
+          data={realEstateTimeline}
+          title="Real Estate Technology Evolution"
         />
       </Box>
 
@@ -128,7 +133,7 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Partner with AIRITHM for Your FinTech Needs
+            Partner with AIRITHM for Your Real Estate Needs
           </h2>
 
           <p
@@ -140,10 +145,11 @@ export default function FintechPage() {
             }}
           >
             Partnering with AIRITHM means working with a team committed to
-            revolutionizing finance through technology. We combine innovation
-            and expertise to deliver secure, scalable financial solutions that
-            reduce risk and maximize ROI. With AIRITHM, you gain a competitive
-            edge in the rapidly evolving fintech landscape.
+            revolutionizing real estate through innovative technology. We
+            combine industry expertise with cutting-edge solutions to deliver
+            platforms that increase operational efficiency, enhance customer
+            satisfaction, and drive revenue growth. With AIRITHM, you stay ahead
+            in the competitive real estate market.
           </p>
         </Box>
       </Box>
@@ -169,7 +175,7 @@ export default function FintechPage() {
           ></h3>
         </Box>
 
-        <VerticalTabsFeature tabs={fintechVerticalTabs} />
+        <VerticalTabsFeature tabs={realEstateVerticalTabs} />
       </Box>
     </>
   );

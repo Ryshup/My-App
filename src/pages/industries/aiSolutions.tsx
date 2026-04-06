@@ -5,17 +5,17 @@ import SplitFeature from "../../components/SplitFeature";
 import VerticalTabsFeature from "../../components/VerticalTabsFeature";
 import { Box } from "@mui/material";
 import {
-  fintechTimeline,
-  fintechSplitFeatures,
-  fintechVerticalTabs,
-} from "../../data/pages/fintechData";
+  aiSolutionsTimeline,
+  aiSolutionsSplitFeatures,
+  aiSolutionsVerticalTabs,
+} from "../../data/pages/aiSolutionsData";
 
-export default function FintechPage() {
+export default function AISolutionsPage() {
   const heroStats = [
-    { number: 8, label: "Years of FinTech Experience" },
-    { number: 1200, label: "Financial Solutions Delivered" },
-    { number: 250, label: "Finance Experts" },
-    { number: 95, label: "Projects Delivered On Time" },
+    { number: 8, label: "Years of AI Experience" },
+    { number: 2000, label: "AI Solutions Deployed" },
+    { number: 350, label: "AI Experts" },
+    { number: 98, label: "Projects Delivered On Time" },
   ];
 
   return (
@@ -23,8 +23,8 @@ export default function FintechPage() {
       <Header />
 
       <HeroHeader
-        title="Our Offerings in FinTech"
-        description1="From innovative payment systems and blockchain solutions to AI-driven trading platforms, AIRITHM empowers financial institutions with cutting-edge technology that drives growth and ensures regulatory compliance."
+        title="Our Offerings in AI Solutions"
+        description1="From predictive analytics and intelligent automation to natural language processing and generative AI, AIRITHM delivers cutting-edge artificial intelligence solutions that transform businesses, drive innovation, and create competitive advantages."
         stats={heroStats}
         ctaText="Consult Our Experts"
         onCtaClick={() => console.log("CTA clicked")}
@@ -32,7 +32,7 @@ export default function FintechPage() {
 
       {/* 🔹 Services Section - Black Background */}
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
-        <StickyTimeline data={fintechTimeline} title="Our FinTech Expertise" />
+        <StickyTimeline data={aiSolutionsTimeline} title="Our AI Expertise" />
       </Box>
 
       {/* 🔹 Solutions Intro - White Background */}
@@ -55,7 +55,7 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Our FinTech Solutions to Scale
+            Our AI Solutions to Scale
           </h2>
 
           <p
@@ -67,9 +67,10 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            From secure payment gateways and digital wallets to blockchain-based
-            settlement systems, AIRITHM delivers end-to-end financial technology
-            solutions tailored to evolving market needs.
+            From custom machine learning models and intelligent automation to
+            large language models and computer vision systems, AIRITHM delivers
+            AI solutions that address complex business challenges and unlock new
+            opportunities.
           </p>
 
           <p
@@ -80,9 +81,9 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Our focus is on building scalable, compliant, and high-security
-            systems that reduce transaction costs, improve customer experience,
-            and enable faster innovation in financial services.
+            Our focus is on building responsible, explainable AI systems that
+            integrate seamlessly with your business, scale with your needs, and
+            deliver measurable ROI.
           </p>
         </Box>
       </Box>
@@ -97,14 +98,14 @@ export default function FintechPage() {
           pb: 6,
         }}
       >
-        <SplitFeature features={fintechSplitFeatures} />
+        <SplitFeature features={aiSolutionsSplitFeatures} />
       </Box>
 
       {/* 🔹 AI Timeline Section - Black Background */}
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
         <StickyTimeline
-          data={fintechTimeline}
-          title="FinTech Evolution & Innovation"
+          data={aiSolutionsTimeline}
+          title="AI Technology Evolution"
         />
       </Box>
 
@@ -128,7 +129,7 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Partner with AIRITHM for Your FinTech Needs
+            Partner with AIRITHM for Your AI Needs
           </h2>
 
           <p
@@ -139,11 +140,11 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Partnering with AIRITHM means working with a team committed to
-            revolutionizing finance through technology. We combine innovation
-            and expertise to deliver secure, scalable financial solutions that
-            reduce risk and maximize ROI. With AIRITHM, you gain a competitive
-            edge in the rapidly evolving fintech landscape.
+            Partnering with AIRITHM means working with a team at the forefront
+            of artificial intelligence innovation. We combine deep technical
+            expertise with business acumen to deliver AI solutions that drive
+            transformation. With AIRITHM, you harness the power of AI to compete
+            in the digital era and achieve breakthrough results.
           </p>
         </Box>
       </Box>
@@ -169,7 +170,7 @@ export default function FintechPage() {
           ></h3>
         </Box>
 
-        <VerticalTabsFeature tabs={fintechVerticalTabs} />
+        <VerticalTabsFeature tabs={aiSolutionsVerticalTabs} />
       </Box>
     </>
   );

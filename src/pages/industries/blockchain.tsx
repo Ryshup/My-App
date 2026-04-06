@@ -5,17 +5,17 @@ import SplitFeature from "../../components/SplitFeature";
 import VerticalTabsFeature from "../../components/VerticalTabsFeature";
 import { Box } from "@mui/material";
 import {
-  fintechTimeline,
-  fintechSplitFeatures,
-  fintechVerticalTabs,
-} from "../../data/pages/fintechData";
+  blockchainTimeline,
+  blockchainSplitFeatures,
+  blockchainVerticalTabs,
+} from "../../data/pages/blockchainData";
 
-export default function FintechPage() {
+export default function BlockchainPage() {
   const heroStats = [
-    { number: 8, label: "Years of FinTech Experience" },
-    { number: 1200, label: "Financial Solutions Delivered" },
-    { number: 250, label: "Finance Experts" },
-    { number: 95, label: "Projects Delivered On Time" },
+    { number: 6, label: "Years of Blockchain Experience" },
+    { number: 500, label: "Blockchain Solutions Delivered" },
+    { number: 180, label: "Blockchain Experts" },
+    { number: 96, label: "Projects Delivered On Time" },
   ];
 
   return (
@@ -23,8 +23,8 @@ export default function FintechPage() {
       <Header />
 
       <HeroHeader
-        title="Our Offerings in FinTech"
-        description1="From innovative payment systems and blockchain solutions to AI-driven trading platforms, AIRITHM empowers financial institutions with cutting-edge technology that drives growth and ensures regulatory compliance."
+        title="Our Offerings in Blockchain"
+        description1="From smart contract development and decentralized applications to enterprise blockchain solutions and Web3 platforms, AIRITHM delivers blockchain technology that enables trust, transparency, and transformation across industries."
         stats={heroStats}
         ctaText="Consult Our Experts"
         onCtaClick={() => console.log("CTA clicked")}
@@ -32,7 +32,10 @@ export default function FintechPage() {
 
       {/* 🔹 Services Section - Black Background */}
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
-        <StickyTimeline data={fintechTimeline} title="Our FinTech Expertise" />
+        <StickyTimeline
+          data={blockchainTimeline}
+          title="Our Blockchain Expertise"
+        />
       </Box>
 
       {/* 🔹 Solutions Intro - White Background */}
@@ -55,7 +58,7 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Our FinTech Solutions to Scale
+            Our Blockchain Solutions to Scale
           </h2>
 
           <p
@@ -67,9 +70,10 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            From secure payment gateways and digital wallets to blockchain-based
-            settlement systems, AIRITHM delivers end-to-end financial technology
-            solutions tailored to evolving market needs.
+            From audited smart contracts and enterprise permissioned blockchains
+            to DeFi protocols and NFT platforms, AIRITHM delivers secure,
+            scalable blockchain solutions that enable new business models and
+            create lasting value.
           </p>
 
           <p
@@ -80,9 +84,9 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Our focus is on building scalable, compliant, and high-security
-            systems that reduce transaction costs, improve customer experience,
-            and enable faster innovation in financial services.
+            Our focus is on building blockchain systems that are not only
+            technically robust but also compliant with regulations, sustainable,
+            and designed with user experience excellence.
           </p>
         </Box>
       </Box>
@@ -97,14 +101,14 @@ export default function FintechPage() {
           pb: 6,
         }}
       >
-        <SplitFeature features={fintechSplitFeatures} />
+        <SplitFeature features={blockchainSplitFeatures} />
       </Box>
 
       {/* 🔹 AI Timeline Section - Black Background */}
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
         <StickyTimeline
-          data={fintechTimeline}
-          title="FinTech Evolution & Innovation"
+          data={blockchainTimeline}
+          title="Blockchain Technology Evolution"
         />
       </Box>
 
@@ -128,7 +132,7 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Partner with AIRITHM for Your FinTech Needs
+            Partner with AIRITHM for Your Blockchain Needs
           </h2>
 
           <p
@@ -139,11 +143,12 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Partnering with AIRITHM means working with a team committed to
-            revolutionizing finance through technology. We combine innovation
-            and expertise to deliver secure, scalable financial solutions that
-            reduce risk and maximize ROI. With AIRITHM, you gain a competitive
-            edge in the rapidly evolving fintech landscape.
+            Partnering with AIRITHM means working with a team pioneering
+            blockchain innovation responsibly. We combine deep blockchain
+            expertise with enterprise discipline to deliver solutions that
+            transform industries through decentralization. With AIRITHM, you
+            build trustless systems that create competitive advantage and unlock
+            new revenue streams.
           </p>
         </Box>
       </Box>
@@ -169,7 +174,7 @@ export default function FintechPage() {
           ></h3>
         </Box>
 
-        <VerticalTabsFeature tabs={fintechVerticalTabs} />
+        <VerticalTabsFeature tabs={blockchainVerticalTabs} />
       </Box>
     </>
   );

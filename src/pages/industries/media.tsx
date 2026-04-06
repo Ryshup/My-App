@@ -5,17 +5,17 @@ import SplitFeature from "../../components/SplitFeature";
 import VerticalTabsFeature from "../../components/VerticalTabsFeature";
 import { Box } from "@mui/material";
 import {
-  fintechTimeline,
-  fintechSplitFeatures,
-  fintechVerticalTabs,
-} from "../../data/pages/fintechData";
+  mediaTimeline,
+  mediaSplitFeatures,
+  mediaVerticalTabs,
+} from "../../data/pages/mediaData";
 
-export default function FintechPage() {
+export default function MediaPage() {
   const heroStats = [
-    { number: 8, label: "Years of FinTech Experience" },
-    { number: 1200, label: "Financial Solutions Delivered" },
-    { number: 250, label: "Finance Experts" },
-    { number: 95, label: "Projects Delivered On Time" },
+    { number: 10, label: "Years of Media Tech Experience" },
+    { number: 1600, label: "Media Solutions Delivered" },
+    { number: 300, label: "Media Experts" },
+    { number: 97, label: "Projects Delivered On Time" },
   ];
 
   return (
@@ -23,8 +23,8 @@ export default function FintechPage() {
       <Header />
 
       <HeroHeader
-        title="Our Offerings in FinTech"
-        description1="From innovative payment systems and blockchain solutions to AI-driven trading platforms, AIRITHM empowers financial institutions with cutting-edge technology that drives growth and ensures regulatory compliance."
+        title="Our Offerings in Media"
+        description1="From digital publishing platforms and video streaming infrastructure to advanced monetization systems and AI-powered recommendations, AIRITHM empowers media companies with technology that reaches audiences, drives engagement, and maximizes revenue."
         stats={heroStats}
         ctaText="Consult Our Experts"
         onCtaClick={() => console.log("CTA clicked")}
@@ -32,7 +32,10 @@ export default function FintechPage() {
 
       {/* 🔹 Services Section - Black Background */}
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
-        <StickyTimeline data={fintechTimeline} title="Our FinTech Expertise" />
+        <StickyTimeline
+          data={mediaTimeline}
+          title="Our Media Technology Expertise"
+        />
       </Box>
 
       {/* 🔹 Solutions Intro - White Background */}
@@ -55,7 +58,7 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Our FinTech Solutions to Scale
+            Our Media Solutions to Scale
           </h2>
 
           <p
@@ -67,9 +70,10 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            From secure payment gateways and digital wallets to blockchain-based
-            settlement systems, AIRITHM delivers end-to-end financial technology
-            solutions tailored to evolving market needs.
+            From comprehensive content management systems and live streaming
+            infrastructure to sophisticated audience analytics and
+            personalization engines, AIRITHM delivers complete media technology
+            stacks that scale with your audience.
           </p>
 
           <p
@@ -80,9 +84,9 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Our focus is on building scalable, compliant, and high-security
-            systems that reduce transaction costs, improve customer experience,
-            and enable faster innovation in financial services.
+            Our focus is on building robust platforms that enable creators to
+            publish, distribute, monetize, and grow their audience across
+            multiple channels and formats.
           </p>
         </Box>
       </Box>
@@ -97,14 +101,14 @@ export default function FintechPage() {
           pb: 6,
         }}
       >
-        <SplitFeature features={fintechSplitFeatures} />
+        <SplitFeature features={mediaSplitFeatures} />
       </Box>
 
       {/* 🔹 AI Timeline Section - Black Background */}
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
         <StickyTimeline
-          data={fintechTimeline}
-          title="FinTech Evolution & Innovation"
+          data={mediaTimeline}
+          title="Media Technology Evolution"
         />
       </Box>
 
@@ -128,7 +132,7 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Partner with AIRITHM for Your FinTech Needs
+            Partner with AIRITHM for Your Media Needs
           </h2>
 
           <p
@@ -139,11 +143,11 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Partnering with AIRITHM means working with a team committed to
-            revolutionizing finance through technology. We combine innovation
-            and expertise to deliver secure, scalable financial solutions that
-            reduce risk and maximize ROI. With AIRITHM, you gain a competitive
-            edge in the rapidly evolving fintech landscape.
+            Partnering with AIRITHM means working with a team passionate about
+            media innovation. We combine creative vision with technical
+            excellence to deliver platforms that captivate audiences and drive
+            monetization. With AIRITHM, you reach your audience, tell your
+            story, and build a sustainable media business.
           </p>
         </Box>
       </Box>
@@ -169,7 +173,7 @@ export default function FintechPage() {
           ></h3>
         </Box>
 
-        <VerticalTabsFeature tabs={fintechVerticalTabs} />
+        <VerticalTabsFeature tabs={mediaVerticalTabs} />
       </Box>
     </>
   );

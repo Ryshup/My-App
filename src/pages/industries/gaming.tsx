@@ -5,17 +5,17 @@ import SplitFeature from "../../components/SplitFeature";
 import VerticalTabsFeature from "../../components/VerticalTabsFeature";
 import { Box } from "@mui/material";
 import {
-  fintechTimeline,
-  fintechSplitFeatures,
-  fintechVerticalTabs,
-} from "../../data/pages/fintechData";
+  gamingTimeline,
+  gamingSplitFeatures,
+  gamingVerticalTabs,
+} from "../../data/pages/gamingData";
 
-export default function FintechPage() {
+export default function GamingPage() {
   const heroStats = [
-    { number: 8, label: "Years of FinTech Experience" },
-    { number: 1200, label: "Financial Solutions Delivered" },
-    { number: 250, label: "Finance Experts" },
-    { number: 95, label: "Projects Delivered On Time" },
+    { number: 7, label: "Years of Game Development" },
+    { number: 850, label: "Gaming Solutions Delivered" },
+    { number: 240, label: "Game Developers" },
+    { number: 94, label: "Projects Delivered On Time" },
   ];
 
   return (
@@ -23,8 +23,8 @@ export default function FintechPage() {
       <Header />
 
       <HeroHeader
-        title="Our Offerings in FinTech"
-        description1="From innovative payment systems and blockchain solutions to AI-driven trading platforms, AIRITHM empowers financial institutions with cutting-edge technology that drives growth and ensures regulatory compliance."
+        title="Our Offerings in Gaming"
+        description1="From indie mobile games to AAA console titles, VR/AR experiences, and cloud gaming platforms, AIRITHM develops engaging games and gaming infrastructure that captivate players worldwide and build thriving gaming communities."
         stats={heroStats}
         ctaText="Consult Our Experts"
         onCtaClick={() => console.log("CTA clicked")}
@@ -32,7 +32,7 @@ export default function FintechPage() {
 
       {/* 🔹 Services Section - Black Background */}
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
-        <StickyTimeline data={fintechTimeline} title="Our FinTech Expertise" />
+        <StickyTimeline data={gamingTimeline} title="Our Gaming Expertise" />
       </Box>
 
       {/* 🔹 Solutions Intro - White Background */}
@@ -55,7 +55,7 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Our FinTech Solutions to Scale
+            Our Gaming Solutions to Scale
           </h2>
 
           <p
@@ -67,9 +67,10 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            From secure payment gateways and digital wallets to blockchain-based
-            settlement systems, AIRITHM delivers end-to-end financial technology
-            solutions tailored to evolving market needs.
+            From cross-platform game engines and multiplayer backend
+            infrastructure to social features and monetization systems, AIRITHM
+            delivers comprehensive gaming solutions that engage players and
+            drive sustainable revenue models.
           </p>
 
           <p
@@ -80,9 +81,9 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Our focus is on building scalable, compliant, and high-security
-            systems that reduce transaction costs, improve customer experience,
-            and enable faster innovation in financial services.
+            Our focus is on building immersive experiences with high
+            performance, active communities, fair gameplay, and ethical
+            monetization that keeps players engaged for years.
           </p>
         </Box>
       </Box>
@@ -97,14 +98,14 @@ export default function FintechPage() {
           pb: 6,
         }}
       >
-        <SplitFeature features={fintechSplitFeatures} />
+        <SplitFeature features={gamingSplitFeatures} />
       </Box>
 
       {/* 🔹 AI Timeline Section - Black Background */}
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
         <StickyTimeline
-          data={fintechTimeline}
-          title="FinTech Evolution & Innovation"
+          data={gamingTimeline}
+          title="Gaming Technology Evolution"
         />
       </Box>
 
@@ -128,7 +129,7 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Partner with AIRITHM for Your FinTech Needs
+            Partner with AIRITHM for Your Gaming Needs
           </h2>
 
           <p
@@ -139,11 +140,11 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Partnering with AIRITHM means working with a team committed to
-            revolutionizing finance through technology. We combine innovation
-            and expertise to deliver secure, scalable financial solutions that
-            reduce risk and maximize ROI. With AIRITHM, you gain a competitive
-            edge in the rapidly evolving fintech landscape.
+            Partnering with AIRITHM means working with a team passionate about
+            creating games that matter. We combine artistic vision with
+            technical expertise to deliver games that entertain, engage, and
+            build lasting communities. With AIRITHM, you create gaming
+            experiences that players love and that succeed commercially.
           </p>
         </Box>
       </Box>
@@ -169,7 +170,7 @@ export default function FintechPage() {
           ></h3>
         </Box>
 
-        <VerticalTabsFeature tabs={fintechVerticalTabs} />
+        <VerticalTabsFeature tabs={gamingVerticalTabs} />
       </Box>
     </>
   );

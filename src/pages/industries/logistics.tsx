@@ -5,17 +5,17 @@ import SplitFeature from "../../components/SplitFeature";
 import VerticalTabsFeature from "../../components/VerticalTabsFeature";
 import { Box } from "@mui/material";
 import {
-  fintechTimeline,
-  fintechSplitFeatures,
-  fintechVerticalTabs,
-} from "../../data/pages/fintechData";
+  logisticsTimeline,
+  logisticsSplitFeatures,
+  logisticsVerticalTabs,
+} from "../../data/pages/logisticsData";
 
-export default function FintechPage() {
+export default function LogisticsPage() {
   const heroStats = [
-    { number: 8, label: "Years of FinTech Experience" },
-    { number: 1200, label: "Financial Solutions Delivered" },
-    { number: 250, label: "Finance Experts" },
-    { number: 95, label: "Projects Delivered On Time" },
+    { number: 9, label: "Years of Logistics Experience" },
+    { number: 1400, label: "Logistics Solutions Delivered" },
+    { number: 270, label: "Logistics Experts" },
+    { number: 96, label: "Projects Delivered On Time" },
   ];
 
   return (
@@ -23,8 +23,8 @@ export default function FintechPage() {
       <Header />
 
       <HeroHeader
-        title="Our Offerings in FinTech"
-        description1="From innovative payment systems and blockchain solutions to AI-driven trading platforms, AIRITHM empowers financial institutions with cutting-edge technology that drives growth and ensures regulatory compliance."
+        title="Our Offerings in Logistics"
+        description1="From intelligent supply chain visibility and route optimization to warehouse automation and predictive analytics, AIRITHM empowers logistics companies with technology that reduces costs, improves efficiency, and enhances customer satisfaction."
         stats={heroStats}
         ctaText="Consult Our Experts"
         onCtaClick={() => console.log("CTA clicked")}
@@ -32,7 +32,10 @@ export default function FintechPage() {
 
       {/* 🔹 Services Section - Black Background */}
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
-        <StickyTimeline data={fintechTimeline} title="Our FinTech Expertise" />
+        <StickyTimeline
+          data={logisticsTimeline}
+          title="Our Logistics Expertise"
+        />
       </Box>
 
       {/* 🔹 Solutions Intro - White Background */}
@@ -55,7 +58,7 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Our FinTech Solutions to Scale
+            Our Logistics Solutions to Scale
           </h2>
 
           <p
@@ -67,9 +70,10 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            From secure payment gateways and digital wallets to blockchain-based
-            settlement systems, AIRITHM delivers end-to-end financial technology
-            solutions tailored to evolving market needs.
+            From advanced fleet management and warehouse automation to
+            AI-powered demand forecasting, AIRITHM delivers comprehensive
+            logistics solutions that streamline operations and maximize
+            profitability.
           </p>
 
           <p
@@ -80,9 +84,9 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Our focus is on building scalable, compliant, and high-security
-            systems that reduce transaction costs, improve customer experience,
-            and enable faster innovation in financial services.
+            Our focus is on building scalable platforms that reduce
+            transportation costs, optimize inventory levels, improve delivery
+            performance, and provide end-to-end supply chain visibility.
           </p>
         </Box>
       </Box>
@@ -97,14 +101,14 @@ export default function FintechPage() {
           pb: 6,
         }}
       >
-        <SplitFeature features={fintechSplitFeatures} />
+        <SplitFeature features={logisticsSplitFeatures} />
       </Box>
 
       {/* 🔹 AI Timeline Section - Black Background */}
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
         <StickyTimeline
-          data={fintechTimeline}
-          title="FinTech Evolution & Innovation"
+          data={logisticsTimeline}
+          title="Logistics Technology Evolution"
         />
       </Box>
 
@@ -128,7 +132,7 @@ export default function FintechPage() {
               textAlign: "justify",
             }}
           >
-            Partner with AIRITHM for Your FinTech Needs
+            Partner with AIRITHM for Your Logistics Needs
           </h2>
 
           <p
@@ -140,10 +144,11 @@ export default function FintechPage() {
             }}
           >
             Partnering with AIRITHM means working with a team committed to
-            revolutionizing finance through technology. We combine innovation
-            and expertise to deliver secure, scalable financial solutions that
-            reduce risk and maximize ROI. With AIRITHM, you gain a competitive
-            edge in the rapidly evolving fintech landscape.
+            optimizing supply chains through technology. We combine deep
+            logistics industry knowledge with cutting-edge software solutions to
+            deliver platforms that drive efficiency and profitability. With
+            AIRITHM, you transform logistics operations and gain a competitive
+            advantage.
           </p>
         </Box>
       </Box>
@@ -169,7 +174,7 @@ export default function FintechPage() {
           ></h3>
         </Box>
 
-        <VerticalTabsFeature tabs={fintechVerticalTabs} />
+        <VerticalTabsFeature tabs={logisticsVerticalTabs} />
       </Box>
     </>
   );

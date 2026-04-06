@@ -1,0 +1,183 @@
+import Header from "../../components/header/Header";
+import HeroHeader from "../../components/HeroHeader";
+import StickyTimeline from "../../components/Features/StickyTimeline";
+import SplitFeature from "../../components/SplitFeature";
+import VerticalTabsFeature from "../../components/VerticalTabsFeature";
+import { Box } from "@mui/material";
+import {
+  appDevServices,
+  appDevSplitFeatures,
+  appDevVerticalTabs,
+} from "../../data/pages/appDevData";
+
+export default function AppDevPage() {
+  const heroStats = [
+    { number: 7, label: "Years of App Development" },
+    { number: 1100, label: "Apps Developed" },
+    { number: 210, label: "App Developers" },
+    { number: 92, label: "Projects On-Time" },
+  ];
+
+  return (
+    <>
+      <Header />
+
+      <HeroHeader
+        title="Application Development Services"
+        description1="Build powerful, scalable applications that drive business growth. From iOS and Android to web and progressive web apps, we develop solutions tailored to your needs."
+        stats={heroStats}
+        ctaText="Start Your App Project"
+        onCtaClick={() => console.log("CTA clicked")}
+      />
+
+      {/* 🔹 Services Section - Black Background */}
+      <Box sx={{ width: "100%", bgcolor: "#000" }}>
+        <StickyTimeline data={appDevServices} title="Our Development Process" />
+      </Box>
+
+      {/* 🔹 Solutions Intro - White Background */}
+      <Box
+        sx={{
+          width: "100%",
+          bgcolor: "#f5f3f0",
+          px: { xs: 2, md: 1 },
+          pt: { xs: 4, md: 8 },
+          pb: { xs: 2, md: 3 },
+        }}
+      >
+        <Box
+          sx={{
+            maxWidth: 1200,
+            mx: "auto",
+            textAlign: "center",
+            mb: { xs: 4, md: 8 },
+          }}
+        >
+          <Box
+            component="h2"
+            sx={{
+              fontSize: {
+                xs: "clamp(24px, 5vw, 40px)",
+                md: "clamp(32px, 4vw, 48px)",
+              },
+              fontWeight: 700,
+              color: "#000",
+              mb: 2,
+              letterSpacing: "-0.02em",
+            }}
+          >
+            Solutions That Scale
+          </Box>
+          <Box
+            component="p"
+            sx={{
+              fontSize: {
+                xs: "clamp(14px, 4vw, 16px)",
+                md: "clamp(16px, 2vw, 18px)",
+              },
+              color: "#6b7280",
+              lineHeight: 1.6,
+              textAlign: "justify",
+            }}
+          >
+            From concept to launch and beyond, we deliver high-quality
+            applications built with modern technologies and best practices. Our
+            development approach focuses on performance, security, and user
+            satisfaction.
+          </Box>
+        </Box>
+      </Box>
+
+      {/* 🔹 Split Features - White Background */}
+      <Box
+        sx={{
+          width: "100%",
+          bgcolor: "#f5f3f0",
+          px: { xs: 2, md: 1 },
+          pb: { xs: 4, md: 8 },
+        }}
+      >
+        <SplitFeature features={appDevSplitFeatures} />
+      </Box>
+
+      {/* 🔹 Evolution Timeline - Black Background */}
+      <Box
+        sx={{
+          width: "100%",
+          bgcolor: "#000",
+          px: { xs: 2, md: 1 },
+          py: { xs: 4, md: 8 },
+        }}
+      >
+        <StickyTimeline
+          data={appDevServices}
+          title="Our Development Excellence"
+        />
+      </Box>
+
+      {/* 🔹 Partnership Intro - White Background */}
+      <Box
+        sx={{
+          width: "100%",
+          bgcolor: "#f5f3f0",
+          px: { xs: 2, md: 1 },
+          pt: { xs: 4, md: 8 },
+          pb: { xs: 2, md: 3 },
+        }}
+      >
+        <Box
+          sx={{
+            maxWidth: 1200,
+            mx: "auto",
+            textAlign: "center",
+            mb: { xs: 4, md: 8 },
+          }}
+        >
+          <Box
+            component="h2"
+            sx={{
+              fontSize: {
+                xs: "clamp(24px, 5vw, 40px)",
+                md: "clamp(32px, 4vw, 48px)",
+              },
+              fontWeight: 700,
+              color: "#000",
+              mb: 2,
+              letterSpacing: "-0.02em",
+            }}
+          >
+            Why Choose Our Development Team
+          </Box>
+          <Box
+            component="p"
+            sx={{
+              fontSize: {
+                xs: "clamp(14px, 4vw, 16px)",
+                md: "clamp(16px, 2vw, 18px)",
+              },
+              color: "#6b7280",
+              lineHeight: 1.6,
+              textAlign: "justify",
+            }}
+          >
+            We combine technical expertise with agile methodologies to deliver
+            solutions faster, better, and smarter. Our focus on quality,
+            security, and scalability ensures your app succeeds.
+          </Box>
+        </Box>
+      </Box>
+
+      {/* 🔹 Vertical Tabs Feature - White Background */}
+      <Box
+        sx={{
+          width: "100%",
+          bgcolor: "#f5f3f0",
+          px: { xs: 2, md: 1 },
+          pb: { xs: 6, md: 12 },
+        }}
+      >
+        <VerticalTabsFeature tabs={appDevVerticalTabs} />
+      </Box>
+    </>
+  );
+}

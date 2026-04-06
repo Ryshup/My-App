@@ -24,6 +24,32 @@ import InteractiveArticleList from "./components/Features/InteractiveArticleList
 // Lazy load industry pages
 const HealthcarePage = lazy(() => import("./pages/industries/healthcare"));
 const FintechPage = lazy(() => import("./pages/industries/fintech"));
+const EcommercePage = lazy(() => import("./pages/industries/ecommerce"));
+const EducationPage = lazy(() => import("./pages/industries/education"));
+const RealEstatePage = lazy(() => import("./pages/industries/realestate"));
+const LogisticsPage = lazy(() => import("./pages/industries/logistics"));
+const TravelPage = lazy(() => import("./pages/industries/travel"));
+const MediaPage = lazy(() => import("./pages/industries/media"));
+const GamingPage = lazy(() => import("./pages/industries/gaming"));
+const AISolutionsPage = lazy(() => import("./pages/industries/aiSolutions"));
+const BlockchainPage = lazy(() => import("./pages/industries/blockchain"));
+
+// Lazy load service pages
+const ProductDesignPage = lazy(() => import("./pages/services/productDesign"));
+const AppDevPage = lazy(() => import("./pages/services/appDev"));
+const SoftwareDevPage = lazy(() => import("./pages/services/softwareDev"));
+const LegacyModernizationPage = lazy(
+  () => import("./pages/services/legacyModernization"),
+);
+const BlockchainDevPage = lazy(() => import("./pages/services/blockchainDev"));
+const CloudSolutionsPage = lazy(
+  () => import("./pages/services/cloudSolutions"),
+);
+const CybersecurityPage = lazy(() => import("./pages/services/cybersecurity"));
+const IoTSolutionsPage = lazy(() => import("./pages/services/iotSolutions"));
+const ARVRSolutionsPage = lazy(() => import("./pages/services/arvrSolutions"));
+const QATestingPage = lazy(() => import("./pages/services/qaTesting"));
+const DevOpsPage = lazy(() => import("./pages/services/devops"));
 
 const theme = createTheme({
   typography: {
@@ -149,6 +175,168 @@ function App() {
             element={
               <Suspense fallback={<LoadingPage />}>
                 <FintechPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/industries/ecommerce"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <EcommercePage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/industries/education"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <EducationPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/industries/realestate"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <RealEstatePage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/industries/logistics"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <LogisticsPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/industries/travel"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <TravelPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/industries/media"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <MediaPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/industries/gaming"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <GamingPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/industries/aiSolutions"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <AISolutionsPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/industries/blockchain"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <BlockchainPage />
+              </Suspense>
+            }
+          />
+
+          {/* ==================== SERVICE ROUTES ==================== */}
+          <Route
+            path="/services/productDesign"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <ProductDesignPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/services/appDev"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <AppDevPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/services/softwareDev"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <SoftwareDevPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/services/legacyModernization"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <LegacyModernizationPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/services/blockchainDev"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <BlockchainDevPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/services/cloudSolutions"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <CloudSolutionsPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/services/cybersecurity"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <CybersecurityPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/services/iotSolutions"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <IoTSolutionsPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/services/arvrSolutions"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <ARVRSolutionsPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/services/qaTesting"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <QATestingPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/services/devops"
+            element={
+              <Suspense fallback={<LoadingPage />}>
+                <DevOpsPage />
               </Suspense>
             }
           />
