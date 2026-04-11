@@ -179,17 +179,42 @@ export default function SplitFeature({ features }: SplitFeatureProps) {
                 </Typography>
 
                 {/* DESCRIPTION */}
-                <Typography
-                  sx={{
-                    fontSize: "clamp(14px, 2vw, 16px)",
-                    color: "#aaa",
-                    lineHeight: 1.6,
-                    maxWidth: "480px",
-                    fontFamily: '"Inter", sans-serif',
-                  }}
-                >
-                  {items[active].description}
-                </Typography>
+                {items[active].description.includes("•") ? (
+                  <Box
+                    sx={{
+                      fontSize: "clamp(14px, 2vw, 16px)",
+                      color: "#aaa",
+                      lineHeight: 1.6,
+                      maxWidth: "480px",
+                      fontFamily: '"Inter", sans-serif',
+                    }}
+                  >
+                    <ul style={{ margin: 0, paddingLeft: "20px" }}>
+                      {items[active].description
+                        .split("\n")
+                        .map((line, idx) => {
+                          const cleanLine = line.replace("•", "").trim();
+                          return cleanLine ? (
+                            <li key={idx} style={{ marginBottom: "8px" }}>
+                              {cleanLine}
+                            </li>
+                          ) : null;
+                        })}
+                    </ul>
+                  </Box>
+                ) : (
+                  <Typography
+                    sx={{
+                      fontSize: "clamp(14px, 2vw, 16px)",
+                      color: "#aaa",
+                      lineHeight: 1.6,
+                      maxWidth: "480px",
+                      fontFamily: '"Inter", sans-serif',
+                    }}
+                  >
+                    {items[active].description}
+                  </Typography>
+                )}
               </Box>
             </motion.div>
           )}

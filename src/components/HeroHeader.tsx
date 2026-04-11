@@ -9,6 +9,9 @@ interface HeroStat {
 interface HeroHeaderProps {
   title: string;
   description1: string;
+  subtitle?: string;
+  bodyParagraph1?: string;
+  bodyParagraph2?: string;
   stats: HeroStat[];
   ctaText?: string;
   onCtaClick?: () => void;
@@ -47,6 +50,9 @@ const AnimatedCounter = ({ target }: { target: number }) => {
 export default function HeroHeader({
   title,
   description1,
+  subtitle,
+  bodyParagraph1,
+  bodyParagraph2,
   stats,
   ctaText = "Consult Our Experts",
   onCtaClick,
@@ -84,9 +90,9 @@ export default function HeroHeader({
             display: "grid",
             gridTemplateColumns: { xs: "1fr", lg: "1fr 1px 1fr" },
             gap: { xs: 6, lg: 0 },
-            alignItems: "start",
+            alignItems: "center",
             position: "relative",
-            minHeight: "300px",
+            minHeight: "400px",
           }}
         >
           {/* LEFT SIDE - TITLE & DESCRIPTION */}
@@ -98,25 +104,75 @@ export default function HeroHeader({
                 fontWeight: 900,
                 color: "#000",
                 lineHeight: 1.2,
-                mb: 6,
+                mb: subtitle ? 3 : 6,
                 fontFamily: '"DM Sans", sans-serif',
               }}
             >
               {title}
             </Typography>
 
-            {/* DESCRIPTION */}
-            <Typography
-              sx={{
-                fontSize: "clamp(14px, 2vw, 16px)",
-                color: "#555",
-                lineHeight: 1.8,
-                fontFamily: '"DM Sans", sans-serif',
-                textAlign: "justify",
-              }}
-            >
-              {description1}
-            </Typography>
+            {/* SUBTITLE */}
+            {subtitle && (
+              <Typography
+                sx={{
+                  fontSize: "clamp(16px, 2.5vw, 18px)",
+                  color: "#333",
+                  lineHeight: 1.6,
+                  fontWeight: 500,
+                  mb: 4,
+                  fontFamily: '"DM Sans", sans-serif',
+                  textAlign: "justify",
+                }}
+              >
+                {subtitle}
+              </Typography>
+            )}
+
+            {/* DESCRIPTION - Fallback for old format */}
+            {!subtitle && !bodyParagraph1 && (
+              <Typography
+                sx={{
+                  fontSize: "clamp(14px, 2vw, 16px)",
+                  color: "#555",
+                  lineHeight: 1.8,
+                  fontFamily: '"DM Sans", sans-serif',
+                  textAlign: "justify",
+                }}
+              >
+                {description1}
+              </Typography>
+            )}
+
+            {/* BODY PARAGRAPH 1 */}
+            {bodyParagraph1 && (
+              <Typography
+                sx={{
+                  fontSize: "clamp(14px, 2vw, 16px)",
+                  color: "#555",
+                  lineHeight: 1.8,
+                  fontFamily: '"DM Sans", sans-serif',
+                  textAlign: "justify",
+                  mb: 3,
+                }}
+              >
+                {bodyParagraph1}
+              </Typography>
+            )}
+
+            {/* BODY PARAGRAPH 2 */}
+            {bodyParagraph2 && (
+              <Typography
+                sx={{
+                  fontSize: "clamp(14px, 2vw, 16px)",
+                  color: "#555",
+                  lineHeight: 1.8,
+                  fontFamily: '"DM Sans", sans-serif',
+                  textAlign: "justify",
+                }}
+              >
+                {bodyParagraph2}
+              </Typography>
+            )}
           </Box>
 
           {/* CENTER - VERTICAL DIVIDER */}
@@ -124,7 +180,7 @@ export default function HeroHeader({
             sx={{
               width: "1px",
               height: "100%",
-              minHeight: "300px",
+              minHeight: "400px",
               bgcolor: "#999",
               display: { xs: "none", lg: "block" },
             }}
@@ -137,6 +193,8 @@ export default function HeroHeader({
               gridTemplateColumns: "1fr 1fr",
               gap: { xs: 4, md: 6 },
               pl: { lg: 6 },
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
             {stats.map((stat, index) => (

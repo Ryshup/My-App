@@ -47,7 +47,7 @@ export const healthcareTimeline = [
     year: "Phase 1",
     title: "AI & Intelligent Systems ",
     description:
-      "We design and deploy AI systems that are reliable, scalable, and built to perform in real-world environments, delivering consistent and measurable impact. ",
+      "We design and deploy AI systems that are reliable, scalable, and built to perform in real-world environments, delivering consistent and measurable impact.",
     icon: "awesome" as const,
   },
   {
@@ -85,14 +85,13 @@ export const healthcareSplitFeatures = [
     id: 1,
     title: "Healthcare Applications We Develop",
     description:
-      "• Telemedicine and virtual care applications\n• Practice and clinic management apps\n• Pharmacy management solutions\n• Mental health and wellness platforms\n• Medication tracking and adherence apps\n• Medical imaging and diagnostics apps\n• Patient care and engagement apps\n• Fitness and nutrition applications\n• Digital therapeutics platforms",
+      "• Pharmacy management solutions\n• Medication tracking and adherence apps\n• Patient care and engagement app \n• Healthcare data management systems \n",
   },
   {
     id: 2,
     title: "Healthcare Software We Build",
     description:
-      "• EHR and EMR systems\n• Patient engagement platforms\n• Software for medical devices (SaMD)\n• Remote patient monitoring systems\n• Revenue cycle management (RCM) software\n• Healthcare CRM solutions\n• Hospital management systems\n• Pharmacy management software\n• Precision medicine platforms\n• Healthcare data management systems",
-  },
+      "• EHR and EMR systems\n• Patient engagement platforms\n• Software for medical devices (SaMD)\n• Remote patient monitoring systems\n",  },
   {
     id: 3,
     title: "Innovative Healthcare Solutions",
@@ -115,28 +114,28 @@ export const healthcareSplitFeatures = [
 
 export const healthcareVerticalTabs = [
 {
-  title: "Adherence to Leading Healthcare Standards",
+  title: "Exceeding Global Healthcare Standards",
   description:
     "We ensure strict compliance with global healthcare regulations and industry best practices.",
   image:
     "https://images.unsplash.com/photo-1585435557343-3b092031a831?q=80&w=1200", // doctor with tablet / documentation
 },
   {
-    title: "Security-First Approach",
+    title: "Security Built into Every Layer",
     description:
       "Our solutions are designed with data protection and system security at their core.",
     image:
       "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1200", // cybersecurity / lock / code
   },
   {
-    title: "Deep Industry Understanding",
+    title: "Expertise That Understands Healthcare ",
     description:
       "We combine technical expertise with a strong grasp of healthcare workflows and challenges.",
     image:
       "https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=1200", // doctors discussing / collaboration
   },
   {
-    title: "Holistic Solution Approach",
+    title: "End-to-End, Tailored Solutions",
     description:
       "From strategy to deployment, we deliver end-to-end solutions tailored to your needs.",
     image:
@@ -183,19 +182,18 @@ export const healthcareServices = [
     year: "Service 1",
     title: "Healthcare IT Consulting",
     description:
-      "We provide strategic guidance to help healthcare organizations plan, design, and implement the right technology solutions aligned with their goals.",
+      "We provide strategic guidance to help you plan, design, and implement the right technology solutions aligned with your goals.",
     icon: "awesome" as const,
   },
   {
     year: "Service 2",
     title: "Healthcare App Development",
     description:
-      "We build user-friendly mobile and web applications that enable better communication between patients and providers while improving accessibility.",
-    icon: "phone" as const,
+      "We build user-friendly mobile and web applications that enable better communication between patients and providers while improving accessibility." ,
   },
   {
     year: "Service 3",
-    title: "Healthcare Interoperability",
+    title: "Integrated Healthcare Platforms",
     description:
       "We integrate systems and enable smooth data exchange across platforms, ensuring connected and efficient healthcare ecosystems.",
     icon: "memory" as const,
@@ -211,14 +209,7 @@ export const healthcareServices = [
     year: "Service 5",
     title: "Healthcare Security & Compliance",
     description:
-      "We ensure your systems are protected with advanced security measures while meeting all necessary regulatory standards.",
+      "We safeguard your systems with advanced security measures, ensuring full compliance with regulatory standards while maintaining seamless operations.",
     icon: "security" as const,
-  },
-  {
-    year: "Service 6",
-    title: "Managed IT Services",
-    description:
-      "We offer continuous monitoring, support, and optimization to keep your healthcare systems running efficiently at all times.",
-    icon: "awesome" as const,
   },
 ];

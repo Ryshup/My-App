@@ -15,6 +15,7 @@ interface TimelineItem {
 interface StickyTimelineProps {
   data: TimelineItem[];
   title?: string;
+  subtitle?: string;
 }
 
 // Icon mapping
@@ -38,6 +39,7 @@ const iconMap = {
 export default function StickyTimeline({
   data,
   title = "Our Journey",
+  subtitle,
 }: StickyTimelineProps) {
   return (
     <Box
@@ -80,17 +82,19 @@ export default function StickyTimeline({
               {title}
             </Typography>
 
-            <Typography
-              sx={{
-                color: "#999",
-                fontSize: "clamp(14px, 2vw, 16px)",
-                lineHeight: 1.8,
-                fontFamily: '"DM Sans", sans-serif',
-                display: { xs: "none", md: "block" },
-              }}
-            >
-              [Our Core Capabilities]
-            </Typography>
+            {subtitle && (
+              <Typography
+                sx={{
+                  color: "#999",
+                  fontSize: "clamp(14px, 2vw, 16px)",
+                  lineHeight: 1.8,
+                  fontFamily: '"DM Sans", sans-serif',
+                  display: { xs: "none", md: "block" },
+                }}
+              >
+                {subtitle}
+              </Typography>
+            )}
           </Box>
         </Box>
 

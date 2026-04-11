@@ -24,8 +24,11 @@ export default function HealthcarePage() {
       <Header />
 
       <HeroHeader
-        title="Our Offerings in Healthcare"
-        description1="From strategic consulting and custom development to continuous support and AI-driven innovation, AIRITHM helps healthcare organizations build secure, scalable, and intelligent digital systems."
+        title="Healthcare IT Services and Solutions"
+        subtitle="Technology is transforming healthcare like never before."
+        bodyParagraph1="We help healthcare organizations deliver accessible, innovative, and patient-centric care through advanced technology and solution development."
+        bodyParagraph2="In a world where patients expect high-quality services anytime, anywhere, and at affordable costs, healthcare providers need a connected, always-on delivery model. By rewiring operations and building cross-industry ecosystems, our development and IT solutions enable intelligent, connected, and personalized care keeping the patient at the center of every decision and enhancing the overall healthcare experience."
+        description1=""
         stats={heroStats}
         ctaText="Consult Our Experts"
         onCtaClick={() => console.log("CTA clicked")}
@@ -35,7 +38,8 @@ export default function HealthcarePage() {
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
         <StickyTimeline
           data={healthcareServices}
-          title="Our Healthcare Expertise"
+          title="Healthcare IT Excellence Transforming Care Through Development & Technology"
+          subtitle="We simplify complex healthcare systems into secure, efficient, and future-ready digital experiences tailored to your organization's needs. Our development services help healthcare providers, payers, and organizations improve patient care, streamline operations, and enhance digital engagement."
         />
       </Box>
 
@@ -52,14 +56,14 @@ export default function HealthcarePage() {
         <Box sx={{ maxWidth: "1400px", mx: "auto", mb: 0 }}>
           <h2
             style={{
-              fontSize: "clamp(28px, 5vw, 48px)",
+              fontSize: "clamp(26px, 4.5vw, 46px)",
               fontWeight: 700,
               color: "#000",
               marginBottom: "16px",
               textAlign: "justify",
             }}
           >
-            Our Healthcare Solutions to Scale
+            Innovative Solutions That Redefine the Way Healthcare Works
           </h2>
 
           <p
@@ -71,22 +75,10 @@ export default function HealthcarePage() {
               textAlign: "justify",
             }}
           >
-            From intelligent data systems and secure infrastructures to advanced
-            digital care platforms, AIRITHM delivers end-to-end healthcare
-            solutions tailored to evolving industry needs.
-          </p>
-
-          <p
-            style={{
-              fontSize: "clamp(14px, 2vw, 16px)",
-              color: "#333",
-              lineHeight: 1.7,
-              textAlign: "justify",
-            }}
-          >
-            Our focus is on building scalable, compliant, and high-performance
-            systems that enhance patient care, streamline operations, and enable
-            smarter decision-making.
+            We design intelligent ecosystems, secure infrastructures, and
+            advanced digital care platforms delivering scalable, compliant, and
+            high-performing solutions that elevate patient outcomes and
+            operational efficiency.
           </p>
         </Box>
       </Box>
@@ -108,7 +100,8 @@ export default function HealthcarePage() {
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
         <StickyTimeline
           data={healthcareTimeline}
-          title="Our AI Capabilities"
+          title="Transforming Healthcare Through AI-Driven Intelligent Automation"
+          subtitle="AI is embedded into every layer of our solutions, enabling smarter decisions, adaptive workflows, and continuous optimization. We go beyond basic automation to build intelligent, secure, and scalable systems that evolve with modern healthcare needs."
         />
       </Box>
 
@@ -125,14 +118,14 @@ export default function HealthcarePage() {
         <Box sx={{ maxWidth: "1400px", mx: "auto", mb: -4 }}>
           <h2
             style={{
-              fontSize: "clamp(28px, 5vw, 48px)",
+              fontSize: "clamp(26px, 4.5vw, 46px)",
               fontWeight: 700,
               color: "#000",
               marginBottom: "16px",
               textAlign: "justify",
             }}
           >
-            Partner with AIRITHM for Your Healthcare Needs
+            Why Partner with us for Healthcare & life Science
           </h2>
 
           <p
@@ -143,12 +136,9 @@ export default function HealthcarePage() {
               textAlign: "justify",
             }}
           >
-            Partnering with AIRITHM means working with a team committed to
-            reshaping healthcare through technology. We combine innovation and
-            expertise to deliver tailored IT solutions that improve patient care
-            and streamline operations. With AIRITHM, you go beyond meeting
-            expectations—you define new standards for excellence in healthcare
-            IT.
+            Partnering with AIRITHM means leveraging innovation and expertise to
+            deliver tailored IT solutions that enhance patient care, streamline
+            operations, and set new standards in healthcare IT.
           </p>
         </Box>
       </Box>

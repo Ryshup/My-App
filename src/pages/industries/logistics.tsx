@@ -12,10 +12,10 @@ import {
 
 export default function LogisticsPage() {
   const heroStats = [
-    { number: 9, label: "Years of Logistics Experience" },
-    { number: 1400, label: "Logistics Solutions Delivered" },
-    { number: 270, label: "Logistics Experts" },
-    { number: 96, label: "Projects Delivered On Time" },
+    { number: 6, label: "Years of Industry Experience" },
+    { number: 1000, label: "Digital Solutions Delivered" },
+    { number: 200, label: "Technology Experts" },
+    { number: 90, label: "Projects Delivered on Time" },
   ];
 
   return (
@@ -23,8 +23,11 @@ export default function LogisticsPage() {
       <Header />
 
       <HeroHeader
-        title="Our Offerings in Logistics"
-        description1="From intelligent supply chain visibility and route optimization to warehouse automation and predictive analytics, AIRITHM empowers logistics companies with technology that reduces costs, improves efficiency, and enhances customer satisfaction."
+        title="Intelligent Logistics Software Solutions"
+        subtitle="On the road to transformation with transportation technology solutions"
+        bodyParagraph1="Harnessing the power of digital development in transportation and logistics, leaders gain better visibility of their supply chains, access real-time data, and accelerate order fulfilment with advanced technology solutions."
+        bodyParagraph2="Leap ahead by leveraging the latest technologies such as IoT, machine learning, predictive analytics, and blockchain."
+        description1=""
         stats={heroStats}
         ctaText="Consult Our Experts"
         onCtaClick={() => console.log("CTA clicked")}
@@ -34,7 +37,8 @@ export default function LogisticsPage() {
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
         <StickyTimeline
           data={logisticsTimeline}
-          title="Our Logistics Expertise"
+          title="Intelligent Logistics Software Services for Streamlined Operations"
+          subtitle="Modern logistics demands innovative technology to keep operations smooth and efficient. At AIRITHM, we develop complete logistics software solutions that help businesses automate processes, optimize workflows, and improve overall operational and delivery performance."
         />
       </Box>
 
@@ -51,14 +55,14 @@ export default function LogisticsPage() {
         <Box sx={{ maxWidth: "1400px", mx: "auto", mb: 0 }}>
           <h2
             style={{
-              fontSize: "clamp(28px, 5vw, 48px)",
+              fontSize: "clamp(26px, 4.5vw, 46px)",
               fontWeight: 700,
               color: "#000",
               marginBottom: "16px",
               textAlign: "justify",
             }}
           >
-            Our Logistics Solutions to Scale
+            Accelerating Growth Through Modern Logistics Solutions
           </h2>
 
           <p
@@ -70,23 +74,11 @@ export default function LogisticsPage() {
               textAlign: "justify",
             }}
           >
-            From advanced fleet management and warehouse automation to
-            AI-powered demand forecasting, AIRITHM delivers comprehensive
-            logistics solutions that streamline operations and maximize
-            profitability.
-          </p>
-
-          <p
-            style={{
-              fontSize: "clamp(14px, 2vw, 16px)",
-              color: "#333",
-              lineHeight: 1.7,
-              textAlign: "justify",
-            }}
-          >
-            Our focus is on building scalable platforms that reduce
-            transportation costs, optimize inventory levels, improve delivery
-            performance, and provide end-to-end supply chain visibility.
+            We create systems that are reliable, easy to use, and optimized for
+            real-world performance. Whether you're a growing business or a
+            global enterprise, our solutions are tailored to your unique needs
+            helping you stay agile and competitive in a fast-paced logistics
+            environment.
           </p>
         </Box>
       </Box>
@@ -108,7 +100,8 @@ export default function LogisticsPage() {
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
         <StickyTimeline
           data={logisticsTimeline}
-          title="Logistics Technology Evolution"
+          title="AI Transforming Transportation & Logistics"
+          subtitle="Artificial Intelligence is reshaping the logistics industry by enabling smarter operations, faster deliveries, and enhanced decision-making. At AIRITHM, we integrate AI-driven capabilities into logistics solutions to improve efficiency, visibility, and overall performance."
         />
       </Box>
 
@@ -122,17 +115,17 @@ export default function LogisticsPage() {
           pb: 2,
         }}
       >
-        <Box sx={{ maxWidth: "1400px", mx: "auto", mb: -4 }}>
+        <Box sx={{ maxWidth: "1400px", mx: "auto" }}>
           <h2
             style={{
-              fontSize: "clamp(28px, 5vw, 48px)",
+              fontSize: "clamp(26px, 4.5vw, 46px)",
               fontWeight: 700,
               color: "#000",
-              marginBottom: "16px",
+              marginBottom: "24px",
               textAlign: "justify",
             }}
           >
-            Partner with AIRITHM for Your Logistics Needs
+            Why Partner with AIRITHM for Logistics Software Development
           </h2>
 
           <p
@@ -143,12 +136,13 @@ export default function LogisticsPage() {
               textAlign: "justify",
             }}
           >
-            Partnering with AIRITHM means working with a team committed to
-            optimizing supply chains through technology. We combine deep
-            logistics industry knowledge with cutting-edge software solutions to
-            deliver platforms that drive efficiency and profitability. With
-            AIRITHM, you transform logistics operations and gain a competitive
-            advantage.
+            As a trusted transportation and logistics software development
+            company, we empower businesses to transform operations, enhance data
+            capabilities, and gain full supply chain visibility. By combining
+            advanced technologies with our unique context intelligence, we
+            deliver actionable insights that help partners anticipate
+            challenges, make smarter decisions, and build more connected,
+            efficient, and agile logistics ecosystems.
           </p>
         </Box>
       </Box>

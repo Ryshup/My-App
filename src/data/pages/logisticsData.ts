@@ -1,37 +1,44 @@
 export const logisticsTimeline = [
   {
     year: "Phase 1",
-    title: "Supply Chain Visibility",
+    title: "Smart Route Optimization",
     description:
-      "Real-time tracking and monitoring of shipments across global supply networks for complete operational transparency.",
+      "AI analyzes traffic patterns, weather, and delivery constraints to determine the most efficient routes—reducing fuel costs and delivery time.",
     icon: "trending" as const,
   },
   {
     year: "Phase 2",
-    title: "Route Optimization",
+    title: "Predictive Demand Forecasting",
     description:
-      "AI-powered algorithms that calculate optimal delivery routes to reduce costs, emissions, and delivery times.",
+      "Leverage AI to predict demand trends, optimize inventory levels, and plan resources more effectively.",
     icon: "memory" as const,
   },
   {
     year: "Phase 3",
-    title: "Warehouse Automation",
+    title: "Real-Time Tracking & Insights",
     description:
-      "Intelligent warehouse management systems that automate inventory, picking, and packing operations.",
+      "AI-powered systems provide real-time visibility into shipments and operations, enabling faster and more informed decisions.",
     icon: "phone" as const,
   },
   {
     year: "Phase 4",
-    title: "Predictive Analytics",
+    title: "Automation of Operations",
     description:
-      "Machine learning models that forecast demand, optimize inventory levels, and prevent supply chain disruptions.",
+      "Automate repetitive tasks such as order processing, scheduling, and dispatching to improve efficiency and reduce manual errors.",
+    icon: "security" as const,
+  },
+    {
+    year: "Phase 5",
+    title: "Fraud Detection & Risk Management",
+    description:
+      "AI helps identify anomalies and potential risks in transactions and logistics operations, ensuring better security and reliability.",
     icon: "security" as const,
   },
   {
-    year: "Phase 5",
-    title: "Last-Mile Excellence",
+    year: "Phase 6",
+    title: "Intelligent Analytics & Decision Making",
     description:
-      "Advanced solutions for efficient last-mile delivery with real-time customer communication and proof of delivery.",
+      "Turn large volumes of logistics data into actionable insights to optimize performance and improve operational strategies.",
     icon: "awesome" as const,
   },
 ];
@@ -39,75 +46,61 @@ export const logisticsTimeline = [
 export const logisticsSplitFeatures = [
   {
     id: 1,
-    title: "Fleet Management Solutions",
+    title: "Vendor Relationship Management",
     description:
-      "Comprehensive fleet tracking, maintenance scheduling, driver management, and fuel optimization to improve efficiency and reduce operational costs.",
+      "Streamline vendor coordination and improve supply chain collaboration.",
     icon: null,
   },
   {
     id: 2,
-    title: "Warehouse Management Systems",
+    title: "Customer Relationship Management (CRM)",
     description:
-      "Cloud-based WMS that automates inventory tracking, optimizes storage, and accelerates order fulfillment with real-time visibility.",
+      "Manage customer interactions, enhance engagement, and improve retention.",
     icon: null,
   },
   {
     id: 3,
-    title: "Transportation Management",
+    title: "Financial Analytics",
     description:
-      "End-to-end TMS for shipment planning, carrier selection, rate management, and compliance tracking across multiple modes.",
+      "Track costs, revenue, and profitability with real-time financial insights.",
     icon: null,
   },
   {
     id: 4,
-    title: "Last-Mile Delivery",
+    title: "Operational Analytics",
     description:
-      "Customer-centric delivery solutions with route optimization, real-time tracking, proof of delivery, and seamless communication.",
-    icon: null,
-  },
-  {
-    id: 5,
-    title: "Supply Chain Analytics",
-    description:
-      "Advanced analytics platform that provides insights into supply chain performance, cost drivers, and optimization opportunities.",
+      "Monitor performance, optimize workflows, and make data-driven decisions.",
     icon: null,
   },
 ];
 
 export const logisticsVerticalTabs = [
   {
-    title: "Real-Time Visibility",
+    title: "Agile Development Approach",
     description:
-      "Track every shipment in real-time across your entire supply chain network with comprehensive IoT and GPS integration.",
+      "We follow agile methodologies to ensure faster delivery, flexibility, and continuous improvements throughout the development lifecycle.",
     image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200",
+      "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200", // team collaboration / sprint planning
   },
   {
-    title: "Cost Optimization",
+    title: "Advanced Data Security & Protection",
     description:
-      "Reduce logistics costs through AI-powered route planning, carrier optimization, and predictive maintenance strategies.",
+      "Our solutions are built with strong encryption and security protocols to safeguard sensitive data and ensure compliance.",
     image:
-      "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?q=80&w=1200",
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200", // cybersecurity / lock / data protection
   },
   {
-    title: "Customer Satisfaction",
-    description:
-      "Improve delivery reliability and customer experience with proactive communication, accurate ETAs, and exception management.",
-    image:
-      "https://images.unsplash.com/photo-1553552109-bea0a8e6a66b?q=80&w=1200",
-  },
+  title: "24/7 Support & Maintenance",
+  description:
+    "We provide round-the-clock support to ensure your systems run smoothly without disruptions.",
+  image:
+    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80",
+},
   {
-    title: "Sustainability",
+    title: "Quality-Driven Development",
     description:
-      "Reduce carbon footprint through efficient routing, eco-friendly vehicle management, and consolidated shipments.",
+      "Every solution undergoes rigorous testing and quality checks to deliver high-performance, reliable, and scalable software.",
     image:
-      "https://images.unsplash.com/photo-1559056199-641a0ac8b3f7?q=80&w=1200",
-  },
-  {
-    title: "Scalability",
-    description:
-      "Cloud-native architecture that scales seamlessly with your business growth, from regional to global operations.",
-    image:
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1200",
+      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1200", // testing / code review / QA
   },
 ];
