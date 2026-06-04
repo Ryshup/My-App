@@ -24,13 +24,11 @@ import InteractiveArticleList from "./components/Features/InteractiveArticleList
 // Lazy load industry pages
 const HealthcarePage = lazy(() => import("./pages/industries/healthcare"));
 const FintechPage = lazy(() => import("./pages/industries/fintech"));
-const EcommercePage = lazy(() => import("./pages/industries/ecommerce"));
+const EntertainmentPage = lazy(() => import("./pages/industries/entertainment"));
 const EducationPage = lazy(() => import("./pages/industries/education"));
-const RealEstatePage = lazy(() => import("./pages/industries/realestate"));
 const LogisticsPage = lazy(() => import("./pages/industries/logistics"));
 const TravelPage = lazy(() => import("./pages/industries/travel"));
-const MediaPage = lazy(() => import("./pages/industries/media"));
-const GamingPage = lazy(() => import("./pages/industries/gaming"));
+const FinancePage = lazy(() => import("./pages/industries/finance"));
 const AISolutionsPage = lazy(() => import("./pages/industries/aiSolutions"));
 const BlockchainPage = lazy(() => import("./pages/industries/blockchain"));
 
@@ -171,7 +169,7 @@ function App() {
             }
           />
           <Route
-            path="/industries/fintech"
+            path="/industries/banking"
             element={
               <Suspense fallback={<LoadingPage />}>
                 <FintechPage />
@@ -179,10 +177,10 @@ function App() {
             }
           />
           <Route
-            path="/industries/ecommerce"
+            path="/industries/entertainment"
             element={
               <Suspense fallback={<LoadingPage />}>
-                <EcommercePage />
+                <EntertainmentPage />
               </Suspense>
             }
           />
@@ -191,14 +189,6 @@ function App() {
             element={
               <Suspense fallback={<LoadingPage />}>
                 <EducationPage />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/industries/realestate"
-            element={
-              <Suspense fallback={<LoadingPage />}>
-                <RealEstatePage />
               </Suspense>
             }
           />
@@ -219,21 +209,14 @@ function App() {
             }
           />
           <Route
-            path="/industries/media"
+            path="/industries/finance"
             element={
               <Suspense fallback={<LoadingPage />}>
-                <MediaPage />
+                <FinancePage />
               </Suspense>
             }
           />
-          <Route
-            path="/industries/gaming"
-            element={
-              <Suspense fallback={<LoadingPage />}>
-                <GamingPage />
-              </Suspense>
-            }
-          />
+
           <Route
             path="/industries/aiSolutions"
             element={

@@ -5,19 +5,19 @@ import SplitFeature from "../../components/SplitFeature";
 import VerticalTabsFeature from "../../components/VerticalTabsFeature";
 import { Box } from "@mui/material";
 import {
-  healthcareTimeline,
-  healthcareSplitFeatures,
-  healthcareVerticalTabs,
-  healthcareServices,
-  healthSplitFeatures1,
-} from "../../data/pages/healthcareData";
+  mediaTimeline,
+  mediaSplitFeatures,
+  mediaVerticalTabs,
+  financeevolutionTimeline,
+  financeSplitFeatures1,
+} from "../../data/pages/financeData";
 
-export default function HealthcarePage() {
+export default function MediaPage() {
   const heroStats = [
-    { number: 6, label: "Years of Industry Experience" },
-    { number: 1000, label: "Digital Solutions Delivered" },
-    { number: 200, label: "Technology Experts" },
-    { number: 90, label: "Projects Delivered On Time" },
+    { number: 10, label: "Years of Media Tech Experience" },
+    { number: 1600, label: "Media Solutions Delivered" },
+    { number: 300, label: "Media Experts" },
+    { number: 97, label: "Projects Delivered On Time" },
   ];
 
   return (
@@ -25,10 +25,9 @@ export default function HealthcarePage() {
       <Header />
 
       <HeroHeader
-        title="From Data to Better Decisions in Healthcare"
-        // subtitle="Technology is transforming healthcare like never before."
-        bodyParagraph1="Machines and systems driven by AI technology which have never been seen before in surgeries, diagnoses, X-ray analysis, and MRI scans are now integral to today's healthcare system. AIRITHM builds on this shift by helping providers make faster, clearer decisions using real-time data and connected systems that cut through complexity."
-        // bodyParagraph2="In a world where patients expect high-quality services anytime, anywhere, and at affordable costs, healthcare providers need a connected, always-on delivery model. By rewiring operations and building cross-industry ecosystems, our development and IT solutions enable intelligent, connected, and personalized care keeping the patient at the center of every decision and enhancing the overall healthcare experience."
+        title="From Data to Better Decisions in Finance "
+        subtitle="The Finance industry one of the fastest growing industries as there is rise in digital banking, fintech platforms, online payments and AI-driven financial services. However, Financial organizations have more focus on faster transactions, personalized customer experiences, fraud prevention and smarter risk management. AI could play vital role here by enabling intelligent automation, fraud monitoring, predictive insights and smarter financial decision making which will make Finance ecosystem more efficient and secured."
+        bodyParagraph1="With our patented solution, LumiQ at the center, AIRM brings scattered data together, simplifies it, and makes it easier to scale. LumiQ reads data in context, connects it in real time, and gives Finance teams the clarity they need to act without hesitation."
         description1=""
         stats={heroStats}
         ctaText="Consult Our Experts"
@@ -38,9 +37,11 @@ export default function HealthcarePage() {
       {/* 🔹 Services Section - Black Background */}
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
         <StickyTimeline
-          data={healthcareServices}
-          title="AI that understands your clinical context"
-          subtitle="Healthcare decisions are never made in a void. LUMIQ's Context Intelligent Platform embeds real-time situational awareness into every workflow from patient journeys to operational analytics so your systems act on meaning, not just data."
+          data={mediaTimeline}
+          title="Smarter Financial Operations with Contextual AI"
+          subtitle={`Financial decisions should be reliable and smart. LUMIQ's Context Intelligent Platform offers financial operations by understanding customer behavior, transactions patterns and financial trends in real time.
+
+          LumiQ helps Fintech in terms of smarter fraud detection, personalized financial experiences, intelligent compliance monitoring and adaptive decision making which makes system more scalable, secure and future ready.`}
         />
       </Box>
 
@@ -57,14 +58,14 @@ export default function HealthcarePage() {
         <Box sx={{ maxWidth: "1400px", mx: "auto", mb: 0 }}>
           <h2
             style={{
-              fontSize: "clamp(26px, 4.5vw, 46px)",
+              fontSize: "clamp(28px, 5vw, 48px)",
               fontWeight: 700,
               color: "#000",
               marginBottom: "16px",
               textAlign: "justify",
             }}
           >
-            Built for the complexity healthcare actually runs on
+            Built for the Way Modern Finance Works 
           </h2>
 
           <p
@@ -76,7 +77,7 @@ export default function HealthcarePage() {
               textAlign: "justify",
             }}
           >
-            We transform complicated health care systems into systems that are secure by design, user-friendly, and prepared for future developments. If you are striving for increased engagement from patients, more efficient daily processes or greater connectivity throughout the patient’s journey. we build around what your organisation actually needs. 
+            We transform financial operations into systems that are intelligent, secure, and for efficient system. Whether you are aiming for faster transactions, smarter financial decisions, improved customer experiences, basically we build solutions around what your business needs. Our focus is on fintech organizations to adapt changing market demands for future ready system. 
           </p>
         </Box>
       </Box>
@@ -91,14 +92,15 @@ export default function HealthcarePage() {
           pb: 6,
         }}
       >
-        <SplitFeature features={healthcareSplitFeatures} />
+        <SplitFeature features={mediaSplitFeatures} />
       </Box>
-{/* 🔹 Innovative Solutions Section - Black Background */}
+
+{/* 🔹 Smart Finance Solutions - Black Background */}
 <Box sx={{ width: "100%", bgcolor: "#000" }}>
 <Box
 sx={{
 px: { xs: 2, md: 1 },
-pt: { xs: 2, md: 1 },
+pt: { xs: 2, md: 5 },
 pb: { xs: 4, md: 8 },
 }}
 
@@ -118,7 +120,7 @@ pb: { xs: 4, md: 8 },
       textAlign: "justify",
     }}
   >
-    Innovative solutions that redefine the way healthcare works
+    Smart Solutions That Transform Finance
   </h2>
 
   <p
@@ -130,11 +132,12 @@ pb: { xs: 4, md: 8 },
       textAlign: "justify",
     }}
   >
-    Behind every great care experience is technology that just works
-    reliable, connected, and built around the people using it. We create
-    the platforms, tools, and infrastructure that bring that vision to
-    life, powered by LUMIQ to keep your teams focused on what truly
-    matters: delivering care that makes a real difference.
+    We build intelligent platforms, tools, and digital infrastructure that
+    help financial institutions create better customer experiences and
+    smarter financial operations. Powered by our LUMIQ technology, our
+    solutions enable fintech platforms, banks, and financial organizations
+    to focus on what matters most: delivering secure, efficient, and
+    data-driven financial services.
   </p>
 
   <p
@@ -146,11 +149,11 @@ pb: { xs: 4, md: 8 },
       textAlign: "justify",
     }}
   >
-    With AIRITHM’s intelligent quality engineering ecosystem, CoreQ
-    ensures healthcare applications remain stable, compliant, and
-    performance-ready, while EvalQ helps healthcare organizations
-    confidently validate AI-driven experiences, intelligent workflows,
-    and next-generation patient interactions.
+    With AIRITHM’s intelligent quality engineering ecosystem, CoreQ ensures
+    financial applications remain secure, compliant, and performance-ready,
+    while EvalQ enables organizations to confidently validate AI-driven
+    financial models, fraud detection systems, risk management platforms,
+    and intelligent decision-making workflows.
   </p>
 </Box>
 ```
@@ -158,7 +161,7 @@ pb: { xs: 4, md: 8 },
   </Box>
 </Box>
 
-{/* 🔹 Healthcare Applications We Develop - Black Background */}
+{/* 🔹 Finance Applications We Develop - Black Background */}
 <Box sx={{ width: "100%", bgcolor: "#000" }}>
 <Box
 sx={{
@@ -183,7 +186,7 @@ pb: { xs: 4, md: 8 },
       textAlign: "justify",
     }}
   >
-    Healthcare Applications We Develop
+    Finance Applications We Develop
   </h2>
 
   <Box
@@ -195,19 +198,27 @@ pb: { xs: 4, md: 8 },
   >
     {[
       {
-        title: "Pharmacy Management Solutions",
+        title: "AI-Powered Fraud Detection",
         description:
 ""      },
       {
-        title: "Medication Tracking and Adherence Apps",
+        title: "Smart Financial Risk Analysis Platform",
         description:
 ""      },
       {
-        title: "Patient Care and Engagement Apps",
+        title: "Personalized Financial Advisor System",
         description:
 ""      },
       {
-        title: "Healthcare Data Management Systems",
+        title: "Automated Loan Approval & Credit Scoring Application",
+        description:
+""      },
+      {
+        title: "Budget Management System",
+        description:
+""      },
+      {
+        title: "Real-Time Transaction Monitoring & Compliance System",
         description:
 ""      },
     ].map((app, index) => (
@@ -217,13 +228,12 @@ pb: { xs: 4, md: 8 },
           bgcolor: "#111",
           p: { xs: 3, md: 4 },
           borderRadius: "12px",
-          boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
           border: "1px solid #333",
-          transition: "all 0.3s ease",
+          transition: "0.3s",
           "&:hover": {
-            boxShadow: "0 8px 24px rgba(0, 0, 0, 0.5)",
             transform: "translateY(-4px)",
             bgcolor: "#1a1a1a",
+            boxShadow: "0 8px 24px rgba(0,0,0,0.5)",
           },
         }}
       >
@@ -274,64 +284,64 @@ pb: { xs: 4, md: 8 },
   </Box>
 </Box>
 
+
       {/* 🔹 AI Timeline Section - Black Background */}
       <Box sx={{ width: "100%", bgcolor: "#f5f3f0" }}>
         <StickyTimeline
-          data={healthcareTimeline}
-          title="Transforming Healthcare Through AI-Driven Intelligent Automation"
-          subtitle="AI is embedded into every layer of our healthcare solutions, enabling smarter decisions, adaptive workflows, and continuous optimisation. We go beyond basic automation to build intelligent, secure, and scalable systems that evolve with modern healthcare needs."
-           bgcolor="#f5f3f0"
+          data={financeevolutionTimeline}
+          title="Transforming Finance with AI-driven intelligent learning"
+          subtitle="AI is integrated into every layer of our finance solutions to improve operational efficiency, decision-making, and customer experiences. Instead of focusing only on automation, we build smart and secure systems that help financial businesses adapt quickly and deliver more effective financial services in modern digital way."
+            bgcolor="#f5f3f0"
         />
       </Box>
-     {/* 🔹 Grow your Wealth Section - Black Background */}
+      {/* 🔹 Solutions Intro - White Background */}
       <Box
         sx={{
           width: "100%",
           bgcolor: "#000",
           px: { xs: 2, md: 1 },
           pt: { xs: 4, md: 8 },
-          pb: { xs: 4, md: 6 },
+          pb: { xs: 2, md: 3 },
         }}
       >
-        <Box sx={{ maxWidth: "1400px", mx: "auto" }}>
+        <Box sx={{ maxWidth: "1400px", mx: "auto", mb: 0 }}>
           <h2
             style={{
               fontSize: "clamp(28px, 5vw, 48px)",
               fontWeight: 700,
-              color: "#fff",
+              color: "#f5f3f0",
               marginBottom: "16px",
               textAlign: "justify",
             }}
           >
-            Real outcomes. Real healthcare impact.
+            Real outcomes. Real Finance impact. 
           </h2>
 
-          {/* <p
+          <p
             style={{
               fontSize: "clamp(14px, 2vw, 16px)",
-              color: "#ddd",
+              color: "#f5f3f0",
               lineHeight: 1.7,
+              marginBottom: "12px",
               textAlign: "justify",
             }}
           >
-            Our focus is on building scalable, compliant, and high-security
-            systems that reduce transaction costs, improve customer experience,
-            and enable faster innovation in financial services.
-          </p> */}
+            Our solutions helps organizations in the finance industry to transform financial operations and customer experiences by improving efficiency, reliability, smart decision making and most important security. 
+          </p>
         </Box>
       </Box>
 
-      {/* 🔹 Split Features Section - Black Background */}
+      {/* 🔹 Split Features - White Background */}
       <Box
         sx={{
           width: "100%",
           bgcolor: "#000",
           px: { xs: 2, md: 1 },
-          pt: 0,
+          pt: 2,
           pb: 6,
         }}
       >
-        <SplitFeature features={healthSplitFeatures1} />
+        <SplitFeature features={financeSplitFeatures1} />
       </Box>
 
       {/* 🔹 Why Partner Section - White Background */}
@@ -347,14 +357,14 @@ pb: { xs: 4, md: 8 },
         <Box sx={{ maxWidth: "1400px", mx: "auto", mb: -4 }}>
           <h2
             style={{
-              fontSize: "clamp(26px, 4.5vw, 46px)",
+              fontSize: "clamp(28px, 5vw, 48px)",
               fontWeight: 700,
               color: "#000",
               marginBottom: "16px",
               textAlign: "justify",
             }}
           >
-            Smarter Healthcare Starts with the Right Partner
+            Smarter Finance Starts with the Right Partner
           </h2>
 
           <p
@@ -365,7 +375,7 @@ pb: { xs: 4, md: 8 },
               textAlign: "justify",
             }}
           >
-            Partnering with AIRITHM means leveraging innovation and expertise to deliver tailored IT solutions that enhance patient care, streamline operations, and set new standards in healthcare IT. 
+Partnership with us would be all about utilizing innovation and expertise to develop customized IT solutions that enhance customer experiences and streamline financial operations while setting new standards in Finance IT.
           </p>
         </Box>
       </Box>
@@ -391,7 +401,7 @@ pb: { xs: 4, md: 8 },
           ></h3>
         </Box>
 
-        <VerticalTabsFeature tabs={healthcareVerticalTabs} />
+        <VerticalTabsFeature tabs={mediaVerticalTabs} />
       </Box>
     </>
   );

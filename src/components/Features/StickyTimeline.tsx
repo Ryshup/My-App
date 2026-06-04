@@ -16,6 +16,7 @@ interface StickyTimelineProps {
   data: TimelineItem[];
   title?: string;
   subtitle?: string;
+  bgcolor?: string;
 }
 
 // Icon mapping
@@ -40,12 +41,20 @@ export default function StickyTimeline({
   data,
   title = "Our Journey",
   subtitle,
+  bgcolor = "#000",
 }: StickyTimelineProps) {
+  // Determine if background is light or dark
+  const isLightBg = bgcolor === "#f5f3f0" || bgcolor === "#ffffff";
+  const textColor = isLightBg ? "#000" : "#fff";
+  const subtitleColor = isLightBg ? "#666" : "#999";
+  const descriptionColor = isLightBg ? "#555" : "#999";
+  const lineColor = isLightBg ? "rgba(0,0,0,0.1)" : "rgba(255,255,255,0.1)";
+
   return (
     <Box
       sx={{
-        bgcolor: "#000",
-        color: "#fff",
+        bgcolor: bgcolor,
+        color: textColor,
         py: { xs: 6, md: 12 },
         px: { xs: 2, md: 6 },
       }}
@@ -75,26 +84,29 @@ export default function StickyTimeline({
                 fontWeight: 700,
                 lineHeight: 1.3,
                 mb: 4,
-                color: "#fff",
+                color: textColor,
                 fontFamily: '"DM Sans", sans-serif',
               }}
             >
               {title}
             </Typography>
 
-            {subtitle && (
+            {subtitle?.split("\n\n").map((paragraph, index) => (
               <Typography
+                key={index}
                 sx={{
-                  color: "#999",
+                  color: subtitleColor,
                   fontSize: "clamp(14px, 2vw, 16px)",
                   lineHeight: 1.8,
                   fontFamily: '"DM Sans", sans-serif',
                   display: { xs: "none", md: "block" },
+                  wordWrap: "break-word",
+                  mb: index !== subtitle.split("\n\n").length - 1 ? 4 : 0,
                 }}
               >
-                {subtitle}
+                {paragraph.trim()}
               </Typography>
-            )}
+            ))}
           </Box>
         </Box>
 
@@ -108,7 +120,7 @@ export default function StickyTimeline({
               top: 0,
               bottom: 0,
               width: "2px",
-              bgcolor: "rgba(255,255,255,0.1)",
+              bgcolor: lineColor,
               textAlign: "justify",
               display: { xs: "none", md: "block" },
             }}
@@ -140,7 +152,7 @@ export default function StickyTimeline({
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    border: "2px solid rgba(255,255,255,0.1)",
+                    border: `2px solid ${lineColor}`,
                     color: "#ffffff",
                     position: "relative",
                     zIndex: 2,
@@ -160,7 +172,7 @@ export default function StickyTimeline({
                       fontSize: "clamp(16px, 2.5vw, 20px)",
                       fontWeight: 600,
                       mb: 2,
-                      color: "#fff",
+                      color: textColor,
                       fontFamily: '"DM Sans", sans-serif',
                     }}
                   >
@@ -171,7 +183,7 @@ export default function StickyTimeline({
                     sx={{
                       fontSize: "clamp(14px, 2vw, 16px)",
                       lineHeight: 1.7,
-                      color: "#999",
+                      color: descriptionColor,
                       maxWidth: "600px",
                       fontFamily: '"DM Sans", sans-serif',
                     }}

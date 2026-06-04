@@ -1,44 +1,82 @@
 export const logisticsTimeline = [
   {
     year: "Phase 1",
-    title: "Smart Route Optimization",
+    title: "LumiQ Broadcast",
     description:
-      "AI analyzes traffic patterns, weather, and delivery constraints to determine the most efficient routes—reducing fuel costs and delivery time.",
+      "Live shipment, fleet, and operational signals fused in real time.",
     icon: "trending" as const,
   },
   {
     year: "Phase 2",
-    title: "Predictive Demand Forecasting",
+    title: "LumiQ Capsules",
     description:
-      "Leverage AI to predict demand trends, optimize inventory levels, and plan resources more effectively.",
+      "Portable, reusable bundles of logistics and supply chain intelligence.",
     icon: "memory" as const,
   },
   {
     year: "Phase 3",
-    title: "Real-Time Tracking & Insights",
+    title: "LumiQ Protocol",
     description:
-      "AI-powered systems provide real-time visibility into shipments and operations, enabling faster and more informed decisions.",
+      "Standardised rules that define how logistics data flows across systems.",
     icon: "phone" as const,
   },
   {
     year: "Phase 4",
-    title: "Automation of Operations",
+    title: "LumiQ Reflect",
     description:
-      "Automate repetitive tasks such as order processing, scheduling, and dispatching to improve efficiency and reduce manual errors.",
+      "The platform continuously learns and improves with every operational interactions.",
     icon: "security" as const,
   },
-    {
+  {
     year: "Phase 5",
-    title: "Fraud Detection & Risk Management",
+    title: "LumiQ Memory",
     description:
-      "AI helps identify anomalies and potential risks in transactions and logistics operations, ensuring better security and reliability.",
+      "Long-term awareness across shipment history, delivery patterns and supply chain activities.",
     icon: "security" as const,
   },
   {
     year: "Phase 6",
-    title: "Intelligent Analytics & Decision Making",
+    title: "LumiQ Nexus",
     description:
-      "Turn large volumes of logistics data into actionable insights to optimize performance and improve operational strategies.",
+      "Multi-layered AI architecture that balancing real-time decisions with historical insights.",
+    icon: "awesome" as const,
+  },
+];
+
+export const logisticsevolutionTimeline = [
+  {
+    year: "Phase 1",
+    title: "AI & intelligent systems",
+    description:
+      "We design and implement AI-powered systems that support real-time logistics operations, helping businesses optimize deliveries, manage supply chains, and improve overall operational performance.",
+    icon: "trending" as const,
+  },
+  {
+    year: "Phase 2",
+    title: "AI testing & validation",
+    description:
+      "Every logistics solution we develop goes through extensive testing to ensure reliability, security, and smooth performance across complex logistics platforms and integrations.",
+    icon: "memory" as const,
+  },
+  {
+    year: "Phase 3",
+    title: "Context intelligence",
+    description:
+      "We build systems that understand logistics data in real time such as traffic conditions, shipment status, and demand patterns enabling smarter decisions and more adaptive supply chain operations with LUMIQ at the core.",
+    icon: "phone" as const,
+  },
+  {
+    year: "Phase 4",
+    title: "System governance & control",
+    description:
+      "We create intelligent control layers that continuously monitor logistics operations, validate system performance, and ensure transparency, accuracy, and operational stability across the ecosystem.",
+    icon: "security" as const,
+  },
+  {
+    year: "Phase 5",
+    title: "Scalable architecture",
+    description:
+      "Our logistics solutions are designed to handle large-scale operations, supporting growing business demands while maintaining speed, performance, and system reliability.",
     icon: "awesome" as const,
   },
 ];
@@ -46,61 +84,118 @@ export const logisticsTimeline = [
 export const logisticsSplitFeatures = [
   {
     id: 1,
-    title: "Vendor Relationship Management",
+    title: "Logistics IT consulting",
     description:
-      "Streamline vendor coordination and improve supply chain collaboration.",
+      "Our logistics IT consulting services provide practical and scalable guidance tailored to your operational goals. Whether your focus is supply chain modernization, process optimization, system integration, or digital transformation, our team ensures that your logistics strategy is efficient, future-ready, and aligned with business needs.",
     icon: null,
   },
   {
     id: 2,
-    title: "Customer Relationship Management (CRM)",
+    title: "Logistics app development",
     description:
-      "Manage customer interactions, enhance engagement, and improve retention.",
+      "We develop mobile and web applications designed for the fast-moving logistics industry reliable, user-friendly, and built around real operational workflows. From shipment tracking systems to warehouse and fleet management platforms, every solution is created to improve efficiency, scalability, and real-time visibility.",
     icon: null,
   },
   {
     id: 3,
-    title: "Financial Analytics",
+    title: "Integrated logistics platforms",
     description:
-      "Track costs, revenue, and profitability with real-time financial insights.",
+      "Disconnected logistics systems create delays, inefficiencies, and operational risks. We integrate transportation, warehouse, tracking, and supply chain systems into one unified platform, ensuring smooth data flow and seamless coordination across the entire logistics ecosystem.",
     icon: null,
   },
   {
     id: 4,
-    title: "Operational Analytics",
+    title: "AI-powered logistics solutions",
     description:
-      "Monitor performance, optimize workflows, and make data-driven decisions.",
+      "We implement AI where it delivers the most value in logistics route optimization, demand forecasting, predictive analytics, intelligent automation, and operational decision-making. Our AI-driven solutions use real-time and historical data to provide accurate, scalable, and actionable insights for logistics enterprises.",
+    icon: null,
+  },
+  {
+    id: 5,
+    title: "Logistics security & compliance",
+    description:
+      "Security is embedded into every layer of your logistics infrastructure, protecting operational and customer data while supporting compliance and business continuity. Our solutions help organizations manage risks, secure interconnected systems, and maintain reliable operations without compromising performance.",
     icon: null,
   },
 ];
-
+export const logisticsSplitFeatures2 = [
+  {
+    id: 1,
+    title: "Improved Operational Efficiency",
+    description:
+      "Streamlined entertainment workflows that reduce complexity across content discovery, streaming, and user engagement systems.",
+  },
+  {
+    id: 2,
+    title: "Reduced Costs",
+    description:
+      "Optimized platform usage and unified systems help reduce operational and infrastructure costs across entertainment ecosystems.",
+  },
+  {
+    id: 3,
+    title: "Enhanced System Reliability",
+    description:
+      "Robust and scalable architecture ensures stable performance even under high traffic and real-time content demands.",
+  },
+  {
+    id: 4,
+    title: "Faster & Smarter Decision-Making",
+    description:
+      "AI-driven insights enable real-time understanding of user behavior, improving recommendations and business decisions.",
+  },
+  {
+    id: 5,
+    title: "Better Customer Experience",
+    description:
+      "Personalized and seamless entertainment journeys that improve engagement and user satisfaction across platforms.",
+  },
+  {
+    id: 6,
+    title: "Scalability & Flexibility",
+    description:
+      "Systems designed to grow with demand while adapting to new content models, platforms, and user expectations.",
+  },
+  {
+    id: 7,
+    title: "Data Security & Compliance",
+    description:
+      "End-to-end protection of user data with compliance-ready architecture ensuring safe and trusted entertainment experiences.",
+  },
+];
 export const logisticsVerticalTabs = [
   {
-    title: "Agile Development Approach",
+    title: "Exceeding global logistics standards",
     description:
-      "We follow agile methodologies to ensure faster delivery, flexibility, and continuous improvements throughout the development lifecycle.",
+      "We ensure full compliance with the regulations and best practices that logistics demands.",
     image:
-      "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200", // team collaboration / sprint planning
+      "https://images.unsplash.com/photo-1465447142348-e9952c393450?auto=format&fit=crop&w=1200&q=80",
   },
   {
-    title: "Advanced Data Security & Protection",
+    title: "Security built into every layer",
     description:
-      "Our solutions are built with strong encryption and security protocols to safeguard sensitive data and ensure compliance.",
+      "Our solutions are designed with data protection and system security at their core.",
     image:
-      "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200", // cybersecurity / lock / data protection
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80",
   },
   {
-  title: "24/7 Support & Maintenance",
-  description:
-    "We provide round-the-clock support to ensure your systems run smoothly without disruptions.",
-  image:
-    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80",
-},
-  {
-    title: "Quality-Driven Development",
+    title: "Expertise that understands Logistics",
     description:
-      "Every solution undergoes rigorous testing and quality checks to deliver high-performance, reliable, and scalable software.",
+      "We understand the pressures your teams face combining technical depth with real insight into how logistics works day to day.",
     image:
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1200", // testing / code review / QA
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    title: "Solutions custom designed for you from end-to-end",
+    description:
+      "Each company is unique, and so we work with you from conception to installation, designing systems to suit your business needs.",
+    image:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    title: "Risk management services",
+    description:
+      "No more anxiety over your system's operation; we handle all risks and ensure that they do not become problems for you.",
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
   },
 ];

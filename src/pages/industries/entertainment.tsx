@@ -5,19 +5,18 @@ import SplitFeature from "../../components/SplitFeature";
 import VerticalTabsFeature from "../../components/VerticalTabsFeature";
 import { Box } from "@mui/material";
 import {
-  educationTimeline,
-  educationSplitFeatures,
-  educationVerticalTabs,
-  educationevolutionTimeline,
-  educationSplitFeatures1,
-} from "../../data/pages/educationData";
+  ecommerceTimeline,
+  ecommerceSplitFeatures,
+  ecommerceVerticalTabs,
+  entertainmentEvolutionTimeline,
+} from "../../data/pages/entertainmentData";
 
-export default function EducationPage() {
+export default function EcommercePage() {
   const heroStats = [
-    { number: 6, label: "Years of EdTech Experience" },
-    { number: 1100, label: "Education Solutions Delivered" },
-    { number: 220, label: "Education Experts" },
-    { number: 93, label: "Projects Delivered On Time" },
+    { number: 7, label: "Years of E-commerce Experience" },
+    { number: 1500, label: "E-commerce Solutions Delivered" },
+    { number: 280, label: "E-commerce Experts" },
+    { number: 92, label: "Projects Delivered On Time" },
   ];
 
   return (
@@ -25,10 +24,11 @@ export default function EducationPage() {
       <Header />
 
       <HeroHeader
-        title="From Data to Better Decisions in Education"
-        subtitle="The Education industry is rapidly growing in terms of digital learning, online platform, personalized student experiences. However, many institutions are facing challenges where AI can contribute to improve education sector by introducing personalized learning, predictive analysis and smarter decision making."
-        bodyParagraph1="With our patented solution, LumiQ at the center, AIRM brings scattered data together, simplifies it, and makes it easier to scale. LumiQ reads data in context, connects it in real time, and gives Education teams the clarity they need to act without hesitation."
+        title="With Data & Analysis to On Time Entertainment"
+        subtitle="OTT platforms and other social applications aligned with AI Technologies, has been an eminent part of understanding, channelizing & enhancing user experience to a next level. AIRM is playing a pivotal role in interpreting the provider’s preferences and choices towards the content with real time data."
+        bodyParagraph1="With our patented solution, LumiQ at the center, AIRM brings scattered data together, simplifies it, and makes it easier to scale. LumiQ reads data in context, connects it in real time, and gives Platform user choices, content, upcoming events and recommendation based upon their likes/dislikes and nature of the user’s fondness."
         description1=""
+        
         stats={heroStats}
         ctaText="Consult Our Experts"
         onCtaClick={() => console.log("CTA clicked")}
@@ -37,11 +37,9 @@ export default function EducationPage() {
       {/* 🔹 Services Section - Black Background */}
       <Box sx={{ width: "100%", bgcolor: "#000" }}>
         <StickyTimeline
-          data={educationTimeline}
-          title="Transforming Education with Contextual AI"
-          subtitle={`Education decisions are never made in a void. LUMIQ's Context Intelligent Platform embeds real-time situational awareness into every workflow from Personalized learning to Student retention so your systems act on meaning, not just data.
-
-          LumiQ helps schools and learning platforms use AI to improve student learning and engagement. It provides smarter insights and personalized learning experiences using real-time data.`}
+          data={ecommerceTimeline}
+          title="AI That levitates your streaming & social context"
+          subtitle="User behavior is evolving with a wide range of content and polymorphic entertainment options. LUMIQ’s context Intelligent Platform entrenches the user’s preferences based upon real time data."
         />
       </Box>
 
@@ -65,7 +63,7 @@ export default function EducationPage() {
               textAlign: "justify",
             }}
           >
-            Built for the Way Modern Education Works
+            Designed to Elevate the User Experience & convenience
           </h2>
 
           <p
@@ -77,10 +75,22 @@ export default function EducationPage() {
               textAlign: "justify",
             }}
           >
-            We transform educational operations into systems that are intelligent, scalable, and focused on better learning experiences. Whether you are aiming for personalized learning, smoother academic processes, or better connectivity across the EdTech platforms, we build solutions around what your business actually needs.
+We filter out the abundant streaming content and events happening across the region and available on numerous other platforms and bring it to user with accordance to what the user is, what user likes, when and how the user wants it to be presented or exhibited. If you are striving for increased engagement from viewers, more efficient daily processes or greater connectivity throughout the viewer’s experience. we build around what your organization actually needs.
           </p>
-
-          
+{/* 
+          <p
+            style={{
+              fontSize: "clamp(14px, 2vw, 16px)",
+              color: "#333",
+              lineHeight: 1.7,
+              textAlign: "justify",
+            }}
+          >
+            Our focus is on building omnichannel experiences, optimizing
+            checkout flows, and leveraging data analytics to increase average
+            order value, reduce cart abandonment, and build lasting customer
+            loyalty.
+          </p> */}
         </Box>
       </Box>
 
@@ -94,9 +104,10 @@ export default function EducationPage() {
           pb: 6,
         }}
       >
-        <SplitFeature features={educationSplitFeatures} />
+        <SplitFeature features={ecommerceSplitFeatures} />
       </Box>
-{/* 🔹 Smart Education Solutions - Black Background */}
+
+{/* 🔹 Next-Gen Entertainment Solutions - Black Background */}
 <Box sx={{ width: "100%", bgcolor: "#000" }}>
   <Box
     sx={{
@@ -115,7 +126,7 @@ export default function EducationPage() {
           textAlign: "justify",
         }}
       >
-        Smart Solutions That Transform Education
+        Next-Gen Solutions Transforming the Entertainment Industry
       </h2>
 
       <p
@@ -127,11 +138,11 @@ export default function EducationPage() {
           textAlign: "justify",
         }}
       >
-        We build intelligent platforms, tools, and digital infrastructure that
-        help educational institutions create better learning experiences and
-        smarter academic operations. Powered by our LUMIQ technology, our
-        solutions help educators and institutions focus on what matters most:
-        delivering effective and engaging learning.
+        We build the platforms, tools, and infrastructure that power modern
+        entertainment experiences. With LUMIQ at the core, our solutions help
+        organizations connect audiences with the content, events, and
+        experiences they care about most while simplifying operations and
+        increasing engagement.
       </p>
 
       <p
@@ -143,16 +154,18 @@ export default function EducationPage() {
           textAlign: "justify",
         }}
       >
-        With AIRITHM’s intelligent quality engineering ecosystem, CoreQ ensures
-        educational platforms remain scalable, reliable, and performance-ready,
-        while EvalQ enables institutions to confidently validate AI-powered
-        learning experiences, virtual tutors, and intelligent academic workflows.
+        AIRITHM’s intelligent quality engineering ecosystem ensures that
+        entertainment platforms remain scalable, stable, and performance-ready.
+        CoreQ helps maintain platform reliability and quality, while EvalQ
+        enables organizations to validate AI-driven recommendations,
+        personalized user experiences, audience engagement workflows, and
+        intelligent content discovery systems with confidence.
       </p>
     </Box>
   </Box>
 </Box>
 
-{/* 🔹 Education Applications We Develop - Black Background */}
+{/* 🔹 Applications We Offer - Black Background */}
 <Box sx={{ width: "100%", bgcolor: "#000" }}>
   <Box
     sx={{
@@ -171,7 +184,7 @@ export default function EducationPage() {
           textAlign: "justify",
         }}
       >
-        Education Applications We Develop
+        Entertainment Applications We Offer
       </h2>
 
       <Box
@@ -183,23 +196,19 @@ export default function EducationPage() {
       >
         {[
           {
-            title: "Personalized Learning Platform",
+            title: "Automated Event & Ticket Booking Platform",
             description:
 ""          },
           {
-            title: "Student Performance & Analytics System",
+            title: "Unified Streaming Platform",
             description:
 ""          },
           {
-            title: "Learning Management System (LMS)",
+            title: "Trends & Content Discovery Platform",
             description:
 ""          },
           {
-            title: "AI-Powered Virtual Tutor",
-            description:
-""          },
-          {
-            title: "Smart Assessment & Online Examination Platform",
+            title: "Social & Community Engagement Applications",
             description:
 ""          },
         ].map((app, index) => (
@@ -263,75 +272,22 @@ export default function EducationPage() {
     </Box>
   </Box>
 </Box>
+
       {/* 🔹 AI Timeline Section - Black Background */}
       <Box sx={{ width: "100%", bgcolor: "#f5f3f0" }}>
         <StickyTimeline
-          data={educationevolutionTimeline}
-          title="Transforming Education with AI-driven intelligent learning"
-          subtitle="AI is integrated into every layer of our finance solutions to improve operational efficiency, decision-making, and customer experiences. Instead of focusing only on automation, we build smart and secure systems that help financial businesses adapt quickly and deliver more effective financial services in modern digital way."
-          bgcolor="#f5f3f0"
+          data={entertainmentEvolutionTimeline}
+          title="Transforming Entertainment through AI Driven Intelligent automation"
+          subtitle="The technology of artificial intelligence is integrated into all layers of our Entertainment solutions, facilitating decision-making, workflow adaptation, and optimization. Rather than limiting ourselves to just the automation part of things, we create intelligent and scalable solutions."
+        bgcolor = "#f5f3f0"
         />
-      </Box>
-
-{/* 🔹 Real Outcomes - White Background */}
-<Box
-  sx={{
-    width: "100%",
-    bgcolor: "#000",
-    px: { xs: 2, md: 1 },
-    pt: { xs: 4, md: 8 },
-    pb: { xs: 2, md: 3 },
-  }}
->
-  <Box sx={{ maxWidth: "1400px", mx: "auto" }}>
-    <h2
-      style={{
-        fontSize: "clamp(28px, 5vw, 48px)",
-        fontWeight: 700,
-        color: "#f5f3f0",
-        marginBottom: "16px",
-        textAlign: "justify",
-      }}
-    >
-      Real outcomes. Real Education impact.
-    </h2>
-
-    <p
-      style={{
-        fontSize: "clamp(14px, 2vw, 16px)",
-        color: "#f5f3f0",
-        lineHeight: 1.7,
-        marginBottom: "12px",
-        textAlign: "justify",
-      }}
-    >
-      Our solutions help organizations in the Education industry transform
-      learning experiences and academic operations by improving efficiency,
-      reliability, and student engagement.
-    </p>
-{/* 
-    <p
-      style={{
-        fontSize: "clamp(14px, 2vw, 16px)",
-        color: "#333",
-        lineHeight: 1.7,
-        textAlign: "justify",
-      }}
-    >
-      Key outcomes include improved learning experiences, better student
-      engagement, personalized learning journeys, scalable systems, reduced
-      administrative effort, faster decision-making, and strong data security
-      with compliance readiness.
-    </p> */}
-  </Box>
-<SplitFeature features={educationSplitFeatures1} />
       </Box>
 
       {/* 🔹 Why Partner Section - White Background */}
       <Box
         sx={{
           width: "100%",
-          bgcolor: "#f5f3f0",
+          bgcolor: "#000",
           px: { xs: 2, md: 1 },
           pt: { xs: 4, md: 6 },
           pb: 2,
@@ -342,23 +298,23 @@ export default function EducationPage() {
             style={{
               fontSize: "clamp(28px, 5vw, 48px)",
               fontWeight: 700,
-              color: "#000",
+              color: "#f5f3f0",
               marginBottom: "16px",
               textAlign: "justify",
             }}
           >
-            Smarter Education Starts with the Right Partner
+            Evolve with the Evolutionary Partner
           </h2>
 
           <p
             style={{
               fontSize: "clamp(14px, 2vw, 16px)",
-              color: "#333",
+              color: "#f5f3f0",
               lineHeight: 1.7,
               textAlign: "justify",
             }}
           >
-            Partnership with us would be all about utilizing innovation and expertise to develop customized IT solutions that enhance patient care and streamline operations while setting new standards in Education IT.
+            Step in with our AI and it would be all about moving ahead with the new world Innovations, expertise to develop the customized IT Solutions and upgrade the AI experience in the world of Entertainment.
           </p>
         </Box>
       </Box>
@@ -367,7 +323,7 @@ export default function EducationPage() {
       <Box
         sx={{
           width: "100%",
-          bgcolor: "#f5f3f0",
+          bgcolor: "#000",
           px: { xs: 2, md: 1 },
           pt: 6,
           pb: 2,
@@ -384,7 +340,7 @@ export default function EducationPage() {
           ></h3>
         </Box>
 
-        <VerticalTabsFeature tabs={educationVerticalTabs} />
+        <VerticalTabsFeature tabs={ecommerceVerticalTabs} />
       </Box>
     </>
   );

@@ -100,11 +100,10 @@ const menuData: Record<MenuKey, MenuData> = {
         title: "INDUSTRIES",
         icon: BusinessCenterIcon,
         items: [
-          { label: "FinTech", route: "/industries/fintech" },
+          { label: "Banking", route: "/industries/banking" },
           { label: "Healthcare", route: "/industries/healthcare" },
-          { label: "E-commerce", route: "/industries/ecommerce" },
+          { label: "Entertainment", route: "/industries/entertainment" },
           { label: "Education", route: "/industries/education" },
-          { label: "Real Estate", route: "/industries/realestate" },
         ],
       },
       {
@@ -113,8 +112,7 @@ const menuData: Record<MenuKey, MenuData> = {
         items: [
           { label: "Logistics", route: "/industries/logistics" },
           { label: "Travel", route: "/industries/travel" },
-          { label: "Media", route: "/industries/media" },
-          { label: "Gaming", route: "/industries/gaming" },
+          { label: "Finance", route: "/industries/finance" },
         ],
       },
       {

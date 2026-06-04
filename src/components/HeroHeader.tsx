@@ -115,11 +115,11 @@ export default function HeroHeader({
             {subtitle && (
               <Typography
                 sx={{
-                  fontSize: "clamp(16px, 2.5vw, 18px)",
-                  color: "#333",
-                  lineHeight: 1.6,
-                  fontWeight: 500,
-                  mb: 4,
+                  fontSize: "clamp(14px, 2vw, 16px)",
+                  color: "#555",
+                  lineHeight: 1.8,
+                  fontWeight: 400,
+                  mb: 3,
                   fontFamily: '"DM Sans", sans-serif',
                   textAlign: "justify",
                 }}
